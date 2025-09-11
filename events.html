@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Bloom Sis</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-background text-brand m-0">
+
+  <!-- Header -->
+  <div id="header" class="fixed w-full top-0 z-50"></div>
+
+<!-- Hero Section with Countdown for Bloom 2026 -->
+<section class="relative w-full pt-40 pb-24 bg-gradient-to-br from-secondary via-background to-background overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-accent/5 to-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <!-- Left Column: Text & Countdown -->
+    <div class="text-center lg:text-left space-y-6">
+      <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary/10 rounded-full px-4 py-2 shadow-soft mb-6 justify-center lg:justify-start">
+        <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+        <span class="text-sm font-medium text-primary">Bloom 2026 Gathering</span>
+      </div>
+
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[0.9] text-primary mb-4">
+        Join <span class="block text-accent">Bloom 2026</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl font-body">
+        Connect with inspiring speakers, engage in transformative workshops, and experience a community that uplifts and empowers every step of your faith journey.
+      </p>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl font-body">
+        Whether for personal growth, ministry development, or community connection, Bloom 2026 is where faith meets empowerment.
+      </p>
+
+      <!-- Countdown Timer -->
+      <div class="mt-6 grid grid-cols-4 gap-4 text-center">
+        <div class="bg-primary/10 rounded-xl p-4">
+          <span id="days" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span class="text-sm font-medium text-brand/80">Days</span>
+        </div>
+        <div class="bg-primary/10 rounded-xl p-4">
+          <span id="hours" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span class="text-sm font-medium text-brand/80">Hours</span>
+        </div>
+        <div class="bg-primary/10 rounded-xl p-4">
+          <span id="minutes" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span class="text-sm font-medium text-brand/80">Minutes</span>
+        </div>
+        <div class="bg-primary/10 rounded-xl p-4">
+          <span id="seconds" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span class="text-sm font-medium text-brand/80">Seconds</span>
+        </div>
+      </div>
+
+      <a href="https://brushfire.com/bloomsisgathering/conference/610912/details" class="inline-block mt-6 bg-accent text-background font-semibold py-4 px-10 rounded-xl hover:scale-105 transition-all duration-300 shadow-xl text-lg">
+        Get Your Tickets
+      </a>
+    </div>
+
+    <!-- Right Column: Hero Image -->
+    <div class="relative mt-10 lg:mt-0">
+      <img src="assets/images/BLOOM_CAM2219.JPG" alt="Bloom 2026 Event" class="w-full h-auto rounded-3xl shadow-2xl object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent rounded-3xl"></div>
+    </div>
+  </div>
+
+  <!-- Seamless Transition to White -->
+  <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
+<!-- Countdown Timer Script -->
+<script>
+  // Set the date for Bloom 2026
+  const eventDate = new Date("June 5, 2026 09:00:00").getTime();
+
+  const countdown = () => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+  };
+
+  setInterval(countdown, 1000);
+</script>
+
+<!-- Legacy Makers Section (Single Column with Visual Accent) -->
+<section class="relative py-20 bg-gradient-to-br from-background via-secondary/20 to-background overflow-hidden">
+  <!-- Subtle Decorative Background Shapes -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-10 left-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-1/3 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-6 space-y-10">
+    <!-- Section Heading -->
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl font-heading font-extrabold text-primary mb-4">
+        Legacy Makers: <span class="text-accent">Leave Your Mark, Sis!</span>
+      </h2>
+      <p class="text-lg md:text-xl text-brand/80 font-body leading-relaxed max-w-2xl mx-auto">
+        You are not just blooming. You’re building legacy. The mark you leave matters—in your family, your community, and the lives of those around you.
+      </p>
+    </div>
+
+    <!-- Content Blocks -->
+    <div class="space-y-6">
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed font-body">
+        Jesus left an undeniable mark on the earth, and as His followers, we are called to do the same. Legacy isn’t just about what you build in this life—it’s about what you pass on.
+      </p>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed font-body">
+        Many of us equate legacy with wealth, but what if legacy is deeper? The prayers you’ve prayed in private, the courage to pursue healing, the faith you’ve fought for—these are your true legacy.
+      </p>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed font-body">
+        At BLOOM 2026, we’ll gather to reflect, rise, and respond to God’s call to legacy. Explore what it means to leave behind more than material things, and learn how to leave a Godly legacy that echoes through generations.
+      </p>
+
+      <!-- Impact List -->
+      <ul class="list-disc list-inside text-lg md:text-xl text-brand/80 font-body space-y-1">
+        <li>Your Friends</li>
+        <li>Your Children</li>
+        <li>Your Nieces and Nephews</li>
+        <li>Your Community</li>
+        <li>The ones who walk through doors you opened in obedience</li>
+      </ul>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed font-body">
+        Each year, the Lord does something beautiful at BLOOM. This year will be sacred—a moment where women rise not just to bloom but to build.
+      </p>
+
+      <p class="text-lg md:text-xl text-brand/80 leading-relaxed font-body font-semibold">
+        Sis, the seeds you plant now will become someone else’s harvest. You are not just blooming—you’re building legacy.
+      </p>
+
+      <!-- Event Date -->
+      <p class="text-lg md:text-xl text-accent font-heading font-bold">
+        BLOOM Sis Gathering 26<br>
+        Friday, Aug 7, 2026 11:00 a.m. - Sunday, Aug 9, 2026 5:00 p.m. EDT
+      </p>
+    </div>
+
+    <!-- Call-to-Action Button -->
+    <div class="text-center mt-8">
+      <a href="https://brushfire.com/bloomsisgathering/conference/610912/details" class="inline-block bg-accent text-background font-semibold py-4 px-12 rounded-xl hover:scale-105 transition-all duration-300 shadow-xl text-lg">
+        Get Tickets Now
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Footer -->
+  <div id="footer" class="w-full"></div>
+
+  <!-- Include Header & Footer -->
+  <script src="include.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+
+</body>
+</html>
