@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="font-body bg-background text-brand m-0">
+
+  <!-- Header -->
+  <div id="header" class="fixed w-full top-0 z-50"></div>
+
+    
+<!-- Hero Section with Seamless Transition -->
+<section class="relative w-full pt-40 pb-24 bg-gradient-to-br from-secondary via-background to-background overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-accent/5 to-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <!-- Label -->
+    <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary/10 rounded-full px-4 py-2 shadow-soft mb-6">
+      <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+      <span class="text-sm font-medium text-primary">Bloom Media</span>
+    </div>
+
+    <!-- Heading -->
+    <div class="space-y-4 mb-8">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[0.9] text-primary">
+        Experience
+        <span class="block text-accent">Bloom Moments</span>
+      </h1>
+      <div class="w-24 h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full mx-auto"></div>
+    </div>
+
+    <!-- Description -->
+    <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl mx-auto font-body">
+      Relive the heart of <strong>Bloom Sis</strong> through our media hub — a collection of photos, videos, and highlights from our gatherings.  
+      Stay connected with inspiring content from our community, social media, and <strong>YouTube channel</strong>, sharing the joy, healing, and empowerment that define Bloom Sis.
+    </p>
+  </div>
+
+  <!-- Seamless Transition to White -->
+  <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <div id="footer" class="w-full"></div>
+
+  <!-- Include Header & Footer -->
+  <script src="include.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+
+</body>
+</html>
