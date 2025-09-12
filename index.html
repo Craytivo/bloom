@@ -23,108 +23,91 @@
 
 <!-- Hero Section with Video Background -->
 <section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
-<!-- Background Video -->
-<video 
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  preload="auto"
-  poster="assets/images/hero-fallback.jpg"
-  class="absolute inset-0 w-full h-full object-cover object-[0%_20%]">
-  <source src="assets/video/bloom-hero.mp4" type="video/mp4">
-  <source src="assets/video/bloom-hero.webm" type="video/webm">
-  <!-- Fallback text -->
-  Your browser does not support the video tag.
-</video>
-
+  <!-- Background Video -->
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    preload="auto"
+    poster="assets/images/hero-fallback.jpg"
+    class="absolute inset-0 w-full h-full object-cover object-[0%_15%] animate-slow-zoom">
+    <source src="assets/video/bloom-hero.mp4" type="video/mp4">
+    <source src="assets/video/bloom-hero.webm" type="video/webm">
+    <!-- Fallback text -->
+    Your browser does not support the video tag.
+  </video>
 
   <!-- Overlay for readability -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
 
   <!-- Content -->
   <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-    <span class="inline-block bg-accent/80 text-background px-4 py-1 rounded-full text-sm font-semibold tracking-wide mb-6 shadow-lg">
+    <span class="inline-block bg-accent/80 text-background px-4 py-1 rounded-full text-sm font-semibold tracking-wide mb-6 shadow-lg 
+                 opacity-0 animate-fade-up [animation-delay:300ms]">
       BLOOM 2026
     </span>
 
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6 
+               opacity-0 animate-fade-up [animation-delay:700ms]">
       Legacy Makers:
       <span class="block text-accent">Leave Your Mark Sis!</span>
     </h1>
 
-    <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
+    <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 
+              opacity-0 animate-fade-up [animation-delay:1100ms]">
       You are not just blooming. You’re building legacy. Join us as we gather to reflect, rise, 
       and respond to God’s call to leave a mark that echoes through generations.
     </p>
 
-    <!-- CTA -->
-    <div class="flex flex-wrap justify-center gap-4">
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 opacity-0 animate-fade-up [animation-delay:1500ms]">
       <a href="#tickets" 
-         class="px-8 py-4 rounded-xl bg-accent text-background font-semibold shadow-lg hover:scale-105 hover:bg-accent/90 transition-transform">
+         class="px-8 py-4 rounded-xl bg-accent text-background font-semibold shadow-lg 
+                hover:scale-105 hover:bg-accent/90 transition-transform">
         Get Tickets Now
       </a>
       <a href="#details" 
-         class="px-8 py-4 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition">
+         class="px-8 py-4 rounded-xl bg-white/10 text-white font-semibold shadow-lg 
+                hover:bg-white/20 transition">
         Learn More
       </a>
     </div>
   </div>
 </section>
 
-
-<!-- Premium Scrolling Banner with New Messages -->
-<section class="relative w-full overflow-hidden py-12 bg-gradient-to-r from-primary/10 via-background/5 to-primary/10">
-  <!-- Subtle gradient overlay for depth -->
-  <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background pointer-events-none"></div>
-
-  <!-- Marquee Container -->
-  <div class="relative w-full overflow-hidden">
-    <div class="marquee flex gap-16 items-center whitespace-nowrap hover:pause-marquee">
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Bloom 2025 Gathering: Exhale, Connect & Grow—Friday-Sunday, August 8-10
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Bloom 2026 Gathering: Legacy Makers—Leave a mark through faith and community
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Join Outdoor Worship Circle—Connect, Pray & Refresh Together
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        New Member Welcome Brunch: Let’s bloom together in community and celebration
-      </span>
-      <!-- Duplicate messages for seamless loop -->
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Bloom 2025 Gathering: Exhale, Connect & Grow—Friday-Sunday, August 8-10
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Bloom 2026 Gathering: Legacy Makers—Leave a mark through faith and community
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        Join Outdoor Worship Circle—Connect, Pray & Refresh Together
-      </span>
-      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
-        New Member Welcome Brunch: Let’s bloom together in community and celebration
-      </span>
-    </div>
-  </div>
-</section>
-
+<!-- Custom Animations -->
 <style>
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Moves half the total marquee width */
+@keyframes fade-up {
+  0% { 
+    opacity: 0; 
+    transform: translateY(60px) scale(0.92); /* more dramatic */
   }
+  60% { 
+    opacity: 0.85; 
+    transform: translateY(-6px) scale(1.03); /* overshoot for premium motion */
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+.animate-fade-up {
+  animation: fade-up 1.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 
-  .marquee {
-    display: inline-flex;
-    animation: marquee 120s linear infinite;
-  }
-
-  .hover\:pause-marquee:hover {
-    animation-play-state: paused;
-  }
+/* Background video slow cinematic zoom */
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+.animate-slow-zoom {
+  animation: slow-zoom 40s ease-in-out infinite alternate;
+}
 </style>
+
+
+
 
 
 <script>
@@ -145,30 +128,33 @@
 
 
 <!-- About Section -->
-<section class="relative w-full py-20 px-6 bg-background overflow-hidden">
-
-  <div class="relative max-w-6xl mx-auto space-y-16 text-center">
+<section class="relative w-full py-24 px-6 bg-background overflow-hidden">
+  <div class="relative max-w-6xl mx-auto space-y-20 text-center">
 
     <!-- Intro -->
-    <div class="space-y-4">
-      <h2 class="text-4xl md:text-5xl font-heading text-heading drop-shadow-lg">
-        Flourish, Heal & Connect
+    <div class="space-y-6 reveal">
+      <h2 class="text-4xl md:text-5xl font-heading text-heading drop-shadow-sm tracking-tight">
+        Flourish, Heal <span class="text-accent">&amp; Connect</span>
       </h2>
-      <div class="w-24 h-1 mx-auto bg-gradient-to-r from-accent/80 to-accent/40 rounded-full shadow-md"></div>
-      <p class="text-brand text-lg md:text-xl max-w-3xl mx-auto leading-snug font-body">
-        Bloom Sis Connect is a vibrant community where women flourish, nurture meaningful connections, and embrace holistic healing—spiritually, emotionally, and physically.
+      <div class="w-28 h-1 mx-auto bg-gradient-to-r from-accent to-accent/60 rounded-full shadow-md"></div>
+      <p class="text-brand/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-body">
+        Bloom Sis Connect is a vibrant community where women flourish, nurture meaningful connections, 
+        and embrace holistic healing—spiritually, emotionally, and physically.
       </p>
-      <a href="about.html" class="inline-block mt-6 bg-accent text-background font-semibold py-3 px-8 rounded-xl hover:bg-accent-hover hover:scale-105 transition-all duration-300 shadow-lg">
+      <a href="about.html" 
+         class="inline-block mt-6 bg-accent text-background font-semibold py-3 px-10 rounded-lg shadow-md 
+                hover:bg-accent-hover hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
         Learn More About Us
       </a>
     </div>
 
-    <!-- Core Values Grid with Lucide Icons -->
+    <!-- Core Values Grid -->
     <div class="grid md:grid-cols-3 gap-8 text-left">
 
-      <!-- Value Card Template -->
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 1 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg 
+                  hover:shadow-2xl hover:scale-105 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 20l9-5-9-5-9 5 9 5z"></path>
           <path d="M12 12V2"></path>
           <path d="M12 12L3 7"></path>
@@ -180,169 +166,268 @@
         </p>
       </div>
 
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 2 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-2xl bg-gradient-to-br from-luxury/60 to-background shadow-lg 
+                  border border-luxury/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lucide-icon" fill="none" stroke="currentColor">
           <path d="M21 21V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12"></path>
           <path d="M7 21h10"></path>
           <path d="M12 7a4 4 0 1 1-4-4 4 4 0 0 1 4 4z"></path>
         </svg>
-        <h4 class="text-xl font-heading text-heading">Community & Connection</h4>
-        <p class="text-brand text-base font-body leading-snug">
+        <h4 class="text-xl font-heading text-heading font-semibold">Community & Connection</h4>
+        <p class="text-brand/80 text-base font-body leading-relaxed">
           Build strong relationships and grow alongside like-minded women.
         </p>
       </div>
 
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 3 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-2xl bg-gradient-to-br from-luxury/60 to-background shadow-lg 
+                  border border-luxury/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lucide-icon" fill="none" stroke="currentColor">
           <path d="M12 2a10 10 0 0 0-7 17l7 3 7-3a10 10 0 0 0-7-17z"></path>
         </svg>
-        <h4 class="text-xl font-heading text-heading">Spiritual Care</h4>
-        <p class="text-brand text-base font-body leading-snug">
+        <h4 class="text-xl font-heading text-heading font-semibold">Spiritual Care</h4>
+        <p class="text-brand/80 text-base font-body leading-relaxed">
           Deepen your walk with God to find clarity, peace, and strength.
         </p>
       </div>
 
-      <!-- Repeat for remaining value cards -->
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 4 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-2xl bg-gradient-to-br from-luxury/60 to-background shadow-lg 
+                  border border-luxury/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lucide-icon" fill="none" stroke="currentColor">
           <circle cx="12" cy="12" r="10"></circle>
           <path d="M12 6v6l4 2"></path>
         </svg>
-        <h4 class="text-xl font-heading text-heading">Bridging Generations</h4>
-        <p class="text-brand text-base font-body leading-snug">
+        <h4 class="text-xl font-heading text-heading font-semibold">Bridging Generations</h4>
+        <p class="text-brand/80 text-base font-body leading-relaxed">
           Mentorship and collaboration across life stages for holistic growth.
         </p>
       </div>
 
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 5 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-2xl bg-gradient-to-br from-luxury/60 to-background shadow-lg 
+                  border border-luxury/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lucide-icon" fill="none" stroke="currentColor">
           <path d="M20 12H4"></path>
           <path d="M12 4v16"></path>
         </svg>
-        <h4 class="text-xl font-heading text-heading">Self-Love & Acceptance</h4>
-        <p class="text-brand text-base font-body leading-snug">
+        <h4 class="text-xl font-heading text-heading font-semibold">Self-Love & Acceptance</h4>
+        <p class="text-brand/80 text-base font-body leading-relaxed">
           Embrace God-given worth and extend grace to yourself and others.
         </p>
       </div>
 
-      <div class="flex flex-col items-start gap-4 p-8 rounded-3xl bg-gradient-to-br from-background/90 to-accent/10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-accent lucide-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Value Card 6 -->
+      <div class="flex flex-col items-start gap-4 p-8 rounded-2xl bg-gradient-to-br from-luxury/60 to-background shadow-lg 
+                  border border-luxury/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="lucide-icon" fill="none" stroke="currentColor">
           <rect x="2" y="7" width="20" height="10" rx="2"></rect>
           <path d="M2 12h20"></path>
         </svg>
-        <h4 class="text-xl font-heading text-heading">Body Care</h4>
-        <p class="text-brand text-base font-body leading-snug">
+        <h4 class="text-xl font-heading text-heading font-semibold">Body Care</h4>
+        <p class="text-brand/80 text-base font-body leading-relaxed">
           Honouring and caring for our bodies as an act of stewardship.
         </p>
       </div>
-
     </div>
-
-    <!-- Story Section -->
-<div class="grid md:grid-cols-2 gap-10 items-center mt-12 text-left">
-
-  <!-- Text Content -->
-  <div class="space-y-4 md:pr-10">
-    <h3 class="text-3xl md:text-4xl font-heading text-heading drop-shadow-lg">
-      The Bloom Sis Gathering
-    </h3>
-    <p class="text-brand text-lg md:text-xl font-body leading-snug">
-      From humble beginnings in 2018 as <em>My Sister’s Keeper</em>, twelve women gathered to discuss Soul Care. It evolved into the <strong>Soul Care Retreat</strong>, a holistic experience for women to connect.
-    </p>
-    <p class="text-brand text-lg md:text-xl font-body leading-snug">
-      In 2022, rebranded as <strong>Bloom</strong>—a safe, nurturing space where Black women connect, share, and grow alongside like-minded sisters, empowered with tools to thrive.
-    </p>
-    <a href="events.html" class="inline-block mt-4 bg-accent text-background font-semibold py-3 px-8 rounded-xl hover:bg-accent-hover hover:scale-105 transition-all duration-300 shadow-lg">
-      View Upcoming Bloom Sis Events
-    </a>
-  </div>
-
-  <!-- Image Content -->
-  <div class="relative rounded-3xl overflow-hidden shadow-2xl hover:scale-105 transition-transform duration-500 max-w-md mx-auto">
-    <img src="assets\images\bw184794.jpg" alt="Bloom Sis Gathering" class="w-full h-full object-contain">
-    <div class="absolute inset-0 bg-gradient-to-t from-heading/60 to-transparent pointer-events-none"></div>
-  </div>
-
-</div>
-
   </div>
 </section>
+
+<!-- Story Section -->
+<section class="relative w-full py-20 px-6 bg-background">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+    <!-- Text Content -->
+    <div class="space-y-6 md:pr-10 reveal">
+      <h3 class="text-3xl md:text-4xl font-heading font-bold text-heading tracking-tight">
+        The Bloom Sis Gathering
+      </h3>
+      <p class="text-brand/90 text-lg md:text-xl font-body leading-relaxed">
+        From humble beginnings in 2018 as <em>My Sister’s Keeper</em>, twelve women gathered to discuss Soul Care. 
+        It evolved into the <strong>Soul Care Retreat</strong>, a holistic experience for women to connect.
+      </p>
+      <p class="text-brand/90 text-lg md:text-xl font-body leading-relaxed">
+        In 2022, rebranded as <strong>Bloom</strong>—a safe, nurturing space where Black women connect, share, 
+        and grow alongside like-minded sisters, empowered with tools to thrive.
+      </p>
+      <a href="events.html" 
+         class="inline-block mt-4 bg-accent text-background font-semibold py-3 px-10 rounded-lg shadow-md 
+                hover:bg-accent-hover hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+        View Upcoming Bloom Sis Events
+      </a>
+    </div>
+
+    <!-- Image Content -->
+    <div class="relative group max-w-md mx-auto reveal">
+      <div class="overflow-hidden rounded-3xl shadow-2xl">
+        <img src="assets/images/bw184794.jpg" 
+             alt="Bloom Sis Gathering" 
+             class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out">
+        <div class="absolute inset-0 bg-gradient-to-t from-heading/60 to-transparent pointer-events-none rounded-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scroll Animations -->
+<style>
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fade-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  reveals.forEach(el => observer.observe(el));
+});
+</script>
+
+
 
 <!-- Video Testimonial Section -->
-<section class="py-16 bg-background">
-  <div class="max-w-7xl mx-auto px-6 text-center space-y-12">
+<section class="relative py-28 bg-luxury/30 overflow-hidden">
+  <!-- Background Accents -->
+  <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent/20 to-transparent rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-heading/20 to-transparent rounded-full blur-3xl"></div>
 
-    <!-- Section Header -->
-    <div>
-      <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-4">
-        What Our Community Says
+  <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    
+    <!-- Left: Video -->
+    <div class="opacity-0 animate-fade-up [animation-delay:200ms]">
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl group">
+        <div class="relative pb-[56.25%]">
+          <iframe class="absolute top-0 left-0 w-full h-full rounded-3xl" 
+                  src="https://www.youtube.com/embed/ST-41C-Q6pQ" 
+                  title="Soul Care Conversations Testimonial" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <!-- Subtle Overlay Hover Effect -->
+        <div class="absolute inset-0 bg-gradient-to-t from-heading/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-3xl"></div>
+      </div>
+    </div>
+
+    <!-- Right: Premium Text -->
+    <div class="space-y-6 opacity-0 animate-fade-up [animation-delay:400ms]">
+      <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading leading-tight">
+        Voices of <span class="text-accent">Impact</span>
       </h2>
-      <p class="text-lg md:text-xl text-brand max-w-2xl mx-auto">
-        Hear firsthand experiences from women whose lives have been transformed through Bloom Sis Connect.
+      <p class="text-lg md:text-xl text-brand/80 font-body leading-relaxed">
+        “Bloom Sis has given me the courage to heal, the tools to thrive, 
+        and the sisters to walk alongside me.” — A 2025 attendee
       </p>
+      <p class="text-lg md:text-xl text-brand/80 font-body leading-relaxed">
+        These stories are more than testimonies; they are a glimpse of what awaits you at 
+        <span class="font-semibold text-heading">Bloom 2026</span>. 
+        Every encounter is designed to uplift, inspire, and remind you that you’re part of a greater legacy.
+      </p>
+      <a href="https://brushfire.com/bloomsisgathering/conference/610912/details" 
+         class="inline-block mt-4 bg-accent text-background font-semibold py-4 px-10 rounded-xl 
+                hover:bg-accent-hover hover:scale-105 transition-all duration-300 shadow-lg text-lg">
+        Join Us at Bloom 2026
+      </a>
     </div>
-
-    <!-- Video Embed -->
-    <div class="relative pb-[56.25%] rounded-3xl overflow-hidden shadow-2xl">
-      <iframe class="absolute top-0 left-0 w-full h-full" 
-              src="https://www.youtube.com/embed/ST-41C-Q6pQ" 
-              title="Soul Care Conversations Testimonial" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
-    </div>
-
   </div>
 </section>
+
+<!-- Custom Animations -->
+<style>
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(40px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-fade-up {
+  animation: fade-up 1.2s ease-out forwards;
+}
+</style>
+
+
 
 
 
 
 <!-- Reach Out Section -->
-<section class="py-24 bg-luxury">
-  <div class="max-w-7xl mx-auto px-6">
+<section class="relative py-28 bg-luxury overflow-hidden">
+  <!-- Background Accents -->
+  <div class="absolute top-10 right-20 w-96 h-96 bg-gradient-to-br from-accent/20 to-transparent rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 left-20 w-80 h-80 bg-gradient-to-tr from-heading/10 to-transparent rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
     <!-- Section Header -->
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-6">
+    <div class="text-center mb-20 space-y-6 reveal">
+      <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading leading-tight">
         Reach Out & <span class="text-accent">Stay Inspired</span>
       </h2>
-      <p class="text-secondary text-xl max-w-3xl mx-auto leading-relaxed font-body">
-        Bloom Sis is here to support and uplift women. Whether you want to join a gathering, learn more, or share your story, we’d love to hear from you.
+      <p class="text-secondary text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-body">
+        Bloom Sis is here to support and uplift women. Whether you want to join a gathering, learn more, 
+        or share your story, we’d love to hear from you.
       </p>
     </div>
 
     <!-- Cards -->
-    <div class="grid lg:grid-cols-3 gap-12 items-start font-body">
+    <div class="grid lg:grid-cols-3 gap-10 font-body">
       <!-- Learn More Card -->
-      <div class="p-8 rounded-3xl bg-background shadow-md hover:shadow-lg transition-all duration-300">
-        <h3 class="text-2xl font-heading font-bold text-heading mb-3">Learn More</h3>
-        <p class="text-secondary mb-6">
-          Discover the mission and heart of Bloom Sis. Learn how our initiatives inspire women to embrace healing, growth, and community.
+      <div class="p-10 rounded-3xl bg-background shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 reveal">
+        <h3 class="text-2xl font-heading font-bold text-heading mb-4">Learn More</h3>
+        <p class="text-secondary mb-8 leading-relaxed">
+          Discover the mission and heart of Bloom Sis. Learn how our initiatives 
+          inspire women to embrace healing, growth, and community.
         </p>
-        <a href="about.html" class="inline-block bg-accent text-background px-6 py-3 rounded-full font-semibold hover:bg-accent-hover transition">
+        <a href="about.html" 
+           class="inline-block bg-accent text-background px-6 py-3 rounded-full font-semibold shadow-md 
+                  hover:bg-accent-hover hover:shadow-lg transition">
           Explore Bloom Sis
         </a>
       </div>
 
       <!-- Attend a Gathering Card -->
-      <div class="p-8 rounded-3xl bg-background shadow-md hover:shadow-lg transition-all duration-300">
-        <h3 class="text-2xl font-heading font-bold text-heading mb-3">Attend a Gathering</h3>
-        <p class="text-secondary mb-6">
-          Join signature events, retreats, and virtual sessions to connect with women who share your passion for growth, faith, and community.
+      <div class="p-10 rounded-3xl bg-background shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 reveal">
+        <h3 class="text-2xl font-heading font-bold text-heading mb-4">Attend a Gathering</h3>
+        <p class="text-secondary mb-8 leading-relaxed">
+          Join signature events, retreats, and virtual sessions to connect with women 
+          who share your passion for growth, faith, and community.
         </p>
-        <a href="events.html" class="inline-block bg-accent text-background px-6 py-3 rounded-full font-semibold hover:bg-accent-hover transition">
+        <a href="events.html" 
+           class="inline-block bg-accent text-background px-6 py-3 rounded-full font-semibold shadow-md 
+                  hover:bg-accent-hover hover:shadow-lg transition">
           See Upcoming Gatherings
         </a>
       </div>
 
       <!-- Share Your Story Card -->
-      <div class="p-8 rounded-3xl bg-accent text-background shadow-md hover:shadow-lg transition-all duration-300">
-        <h3 class="text-2xl font-heading font-bold mb-3">Share Your Story</h3>
-        <p class="mb-6">
-          Inspire other women by sharing your journey of healing, growth, and faith. Your story can be a light for someone seeking encouragement.
+      <div class="p-10 rounded-3xl bg-gradient-to-br from-accent to-accent-hover text-background shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 reveal">
+        <h3 class="text-2xl font-heading font-bold mb-4">Share Your Story</h3>
+        <p class="mb-8 leading-relaxed">
+          Inspire other women by sharing your journey of healing, growth, and faith. 
+          Your story can be a light for someone seeking encouragement.
         </p>
-        <a href="contact.html" class="inline-block bg-background text-accent px-6 py-3 rounded-full font-semibold hover:bg-background/90 transition">
+        <a href="contact.html" 
+           class="inline-block bg-background text-heading px-6 py-3 rounded-full font-semibold shadow-md 
+                  hover:bg-background/90 hover:shadow-lg transition">
           Inspire Others
         </a>
       </div>
@@ -350,9 +435,39 @@
   </div>
 </section>
 
+<!-- Scroll Animations -->
+<style>
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fade-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+</style>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.2 });
 
-
+  reveals.forEach(el => observer.observe(el));
+});
+</script>
 
 
 <!-- Add Lucide Icons -->
