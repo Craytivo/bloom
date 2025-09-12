@@ -21,47 +21,57 @@
   <!-- Header -->
 <div id="header" class="fixed w-full top-0 z-50"></div>
 
-<!-- Hero Section with Pattern Background & Improved Typography -->
-<section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-  <!-- Hero Video Background -->
-  <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-0">
-    <source src="assets\video\bloom-hero.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<!-- Hero Section with Video Background -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+<!-- Background Video -->
+<video 
+  autoplay 
+  muted 
+  loop 
+  playsinline 
+  preload="auto"
+  poster="assets/images/hero-fallback.jpg"
+  class="absolute inset-0 w-full h-full object-cover object-[0%_20%]">
+  <source src="assets/video/bloom-hero.mp4" type="video/mp4">
+  <source src="assets/video/bloom-hero.webm" type="video/webm">
+  <!-- Fallback text -->
+  Your browser does not support the video tag.
+</video>
 
-  <!-- Overlay for Contrast -->
-  <div class="absolute inset-0 bg-black/70 z-10"></div>
 
-  <!-- Hero Content -->
-  <div class="relative z-20 text-center px-6 max-w-3xl space-y-6 pt-32 sm:pt-24">
-  <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-extrabold leading-tight tracking-tight text-luxury drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
-  Bloom SIS: Empower, Connect, Thrive
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+    <span class="inline-block bg-accent/80 text-background px-4 py-1 rounded-full text-sm font-semibold tracking-wide mb-6 shadow-lg">
+      BLOOM 2026
+    </span>
+
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-6">
+      Legacy Makers:
+      <span class="block text-accent">Leave Your Mark Sis!</span>
     </h1>
-    <noscript>
-      <style>
-        .hero-fallback-padding { padding-top: 6rem !important; }
-      </style>
-    </noscript>
 
-    <p class="text-luxury/90 font-body text-lg sm:text-xl md:text-2xl leading-snug max-w-2xl mx-auto drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)]">
-      Join an exclusive community of inspiring women. Participate in carefully curated events and workshops designed to elevate and connect you with like-minded leaders.
+    <p class="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
+      You are not just blooming. You’re building legacy. Join us as we gather to reflect, rise, 
+      and respond to God’s call to leave a mark that echoes through generations.
     </p>
 
-    <form class="mt-6 bg-white/10 backdrop-blur-lg rounded-3xl p-6 md:p-8 shadow-2xl flex flex-col md:flex-row gap-4">
-      <input type="text" placeholder="Full Name" class="flex-1 py-3 px-5 rounded-xl border border-luxury/30 bg-white/10 placeholder-luxury text-luxury focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition">
-      <input type="email" placeholder="Email Address" class="flex-1 py-3 px-5 rounded-xl border border-luxury/30 bg-white/10 placeholder-luxury text-luxury focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition">
-      <button type="submit" class="bg-accent text-background font-semibold py-3 px-8 rounded-xl hover:bg-accent-hover hover:scale-105 transition-all duration-300 shadow-lg">
-        RSVP Now
-      </button>
-    </form>
-
-    <div class="w-28 h-1 mx-auto mt-4 rounded-full bg-gradient-to-r from-accent/80 to-accent/40 shadow-md"></div>
-
-    <p class="text-luxury/80 font-body text-sm md:text-base mt-2 leading-snug drop-shadow-[0_1px_6px_rgba(0,0,0,0.7)]">
-      We respect your privacy. Your information will only be used for Bloom SIS communications.
-    </p>
+    <!-- CTA -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#tickets" 
+         class="px-8 py-4 rounded-xl bg-accent text-background font-semibold shadow-lg hover:scale-105 hover:bg-accent/90 transition-transform">
+        Get Tickets Now
+      </a>
+      <a href="#details" 
+         class="px-8 py-4 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 transition">
+        Learn More
+      </a>
+    </div>
   </div>
 </section>
+
 
 <!-- Full-Height Scrolling Banner -->
 <section class="w-full bg-luxury py-12 overflow-hidden">
