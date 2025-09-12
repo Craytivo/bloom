@@ -73,61 +73,70 @@
 </section>
 
 
-<!-- Full-Height Scrolling Banner -->
-<section class="w-full bg-luxury py-12 overflow-hidden">
-  <div class="relative flex overflow-hidden">
-    <!-- Marquee Track -->
-    <div class="animate-marquee-slow flex whitespace-nowrap gap-24 items-center">
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Upcoming Bloom SIS Workshop: Sept 20 – Reserve Your Spot!
-      </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        New Member Highlights: Meet inspiring women in our community
-      </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Exclusive Online Circle: Connect with mentors and peers
-      </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Retreat: Mindfulness & Wellness – Oct 15
-      </span>
-    </div>
+<!-- Premium Scrolling Banner with New Messages -->
+<section class="relative w-full overflow-hidden py-12 bg-gradient-to-r from-primary/10 via-background/5 to-primary/10">
+  <!-- Subtle gradient overlay for depth -->
+  <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background pointer-events-none"></div>
 
-    <!-- Duplicate for seamless loop -->
-    <div class="animate-marquee-slow flex whitespace-nowrap gap-24 items-center" aria-hidden="true">
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Upcoming Bloom SIS Workshop: Sept 20 – Reserve Your Spot!
+  <!-- Marquee Container -->
+  <div class="relative w-full overflow-hidden">
+    <div class="marquee flex gap-16 items-center whitespace-nowrap hover:pause-marquee">
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Bloom 2025 Gathering: Exhale, Connect & Grow—Friday-Sunday, August 8-10
       </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        New Member Highlights: Meet inspiring women in our community
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Bloom 2026 Gathering: Legacy Makers—Leave a mark through faith and community
       </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Exclusive Online Circle: Connect with mentors and peers
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Join Outdoor Worship Circle—Connect, Pray & Refresh Together
       </span>
-      <span class="text-heading font-heading text-3xl md:text-5xl font-bold">
-        Retreat: Mindfulness & Wellness – Oct 15
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        New Member Welcome Brunch: Let’s bloom together in community and celebration
+      </span>
+      <!-- Duplicate messages for seamless loop -->
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Bloom 2025 Gathering: Exhale, Connect & Grow—Friday-Sunday, August 8-10
+      </span>
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Bloom 2026 Gathering: Legacy Makers—Leave a mark through faith and community
+      </span>
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        Join Outdoor Worship Circle—Connect, Pray & Refresh Together
+      </span>
+      <span class="flex-shrink-0 text-2xl md:text-3xl lg:text-4xl font-heading font-bold tracking-wider px-6 py-2 bg-white/10 rounded-lg shadow-sm">
+        New Member Welcome Brunch: Let’s bloom together in community and celebration
       </span>
     </div>
   </div>
 </section>
 
 <style>
-  @keyframes marquee-slow {
+  @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); } /* Moves half the total marquee width */
   }
 
-  .animate-marquee-slow {
-    flex-shrink: 0;
-    min-width: 100%;
-    animation: marquee-slow 60s linear infinite;
+  .marquee {
+    display: inline-flex;
+    animation: marquee 120s linear infinite;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .animate-marquee-slow {
-      animation: none;
-    }
+  .hover\:pause-marquee:hover {
+    animation-play-state: paused;
   }
 </style>
+
+
+<script>
+  // Automatically duplicate items for seamless loop
+  const marquee = document.querySelector('.marquee');
+  const items = [...marquee.children];
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    marquee.appendChild(clone);
+  });
+</script>
+
 
 
 
