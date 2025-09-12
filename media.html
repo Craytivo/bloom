@@ -19,50 +19,78 @@
 
     
 <!-- Hero Section with Seamless Transition -->
-<section class="relative w-full pt-40 pb-24 bg-gradient-to-br from-secondary via-background to-background overflow-hidden">
+<section class="relative w-full pt-44 pb-28 bg-gradient-to-br from-secondary/10 via-background to-background overflow-hidden">
+  <!-- Background Accents -->
   <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-accent/5 to-primary/5 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-20 right-32 w-96 h-96 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-24 left-24 w-80 h-80 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-full blur-3xl"></div>
   </div>
 
-  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
     <!-- Label -->
-    <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary/10 rounded-full px-4 py-2 shadow-soft mb-6">
+    <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary/10 
+                rounded-full px-5 py-2 shadow-md mb-8 opacity-0 animate-fade-up [animation-delay:200ms]">
       <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-      <span class="text-sm font-medium text-primary">Bloom Media</span>
+      <span class="text-sm font-semibold text-primary tracking-wide">Bloom Media</span>
     </div>
 
     <!-- Heading -->
-    <div class="space-y-4 mb-8">
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[0.9] text-primary">
+    <div class="space-y-4 mb-10">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-tight text-heading opacity-0 animate-fade-up [animation-delay:400ms]">
         Experience
         <span class="block text-accent">Bloom Moments</span>
       </h1>
-      <div class="w-24 h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full mx-auto"></div>
+      <div class="w-28 h-1 bg-gradient-to-r from-accent to-accent/40 rounded-full mx-auto opacity-0 animate-fade-up [animation-delay:600ms]"></div>
     </div>
 
     <!-- Description -->
-    <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl mx-auto font-body">
-      Relive the heart of <strong>Bloom Sis</strong> through our media hub — a collection of photos, videos, and highlights from our gatherings.  
-      Stay connected with inspiring content from our community, social media, and <strong>YouTube channel</strong>, sharing the joy, healing, and empowerment that define Bloom Sis.
+    <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl mx-auto font-body opacity-0 animate-fade-up [animation-delay:800ms]">
+      Relive the heart of <strong>Bloom Sis</strong> through our media hub — a collection of photos, videos, 
+      and highlights from our gatherings. Stay connected with inspiring content from our community, 
+      social media, and <strong>YouTube channel</strong>, sharing the joy, healing, and empowerment that define Bloom Sis.
     </p>
 
-      <!-- Social Media Buttons -->
-      <div class="mt-10 flex justify-center gap-4 flex-wrap">
-        <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#e4d9cc] hover:bg-accent/90 text-primary font-heading text-lg shadow-lg transition-all duration-200 border border-primary/10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-red-600"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566A2.994 2.994 0 0 0 .502 6.186C0 8.347 0 12 0 12s0 3.653.502 5.814a2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12C24 15.653 24 12 24 12s0-3.653-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          <span class="font-semibold">Watch on YouTube</span>
-        </a>
-        <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-[#e4d9cc] hover:bg-accent/90 text-primary font-heading text-lg shadow-lg transition-all duration-200 border border-primary/10">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 text-pink-500"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/></svg>
-          <span class="font-semibold">Follow on Instagram</span>
-        </a>
-      </div>
+    <!-- Social Media Buttons -->
+    <div class="mt-12 flex justify-center gap-5 flex-wrap opacity-0 animate-fade-up [animation-delay:1000ms]">
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener" 
+         class="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-luxury hover:bg-accent text-heading font-heading text-lg 
+                font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 group">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
+             class="w-7 h-7 text-red-600 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+          <path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.12C19.228 3.5 12 3.5 12 3.5s-7.228 0-9.386.566A2.994 2.994 0 0 0 .502 6.186C0 8.347 0 12 0 12s0 3.653.502 5.814a2.994 2.994 0 0 0 2.112 2.12C4.772 20.5 12 20.5 12 20.5s7.228 0 9.386-.566a2.994 2.994 0 0 0 2.112-2.12C24 15.653 24 12 24 12s0-3.653-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        <span>Watch on YouTube</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener" 
+         class="inline-flex items-center gap-3 px-7 py-3 rounded-full bg-luxury hover:bg-accent text-heading font-heading text-lg 
+                font-semibold shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 group">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" 
+             class="w-7 h-7 text-pink-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5a5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1 0 2a1 1 0 0 1 0-2z"/>
+        </svg>
+        <span>Follow on Instagram</span>
+      </a>
+    </div>
   </div>
 
   <!-- Seamless Transition to White -->
   <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
 </section>
+
+<!-- Custom Animations -->
+<style>
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(40px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.animate-fade-up {
+  animation: fade-up 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+</style>
+
 
 
 
