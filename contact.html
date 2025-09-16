@@ -110,209 +110,141 @@
   <!-- Header -->
   <div id="header" class="fixed w-full top-0 z-50"></div>
 
-<!-- Hero Section -->
-<section class="relative pt-32 pb-20 bg-gradient-to-br from-accent/10 via-background to-background/80 text-center overflow-hidden">
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-accent/20 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-primary/10 blur-3xl rounded-full"></div>
-  </div>
-  <div class="relative z-10 max-w-3xl mx-auto px-6">
-    <h1 class="text-5xl md:text-6xl font-heading font-extrabold leading-tight text-primary drop-shadow mb-6">
+<!-- Hero -->
+<section class="relative pt-40 pb-20 bg-gradient-to-br from-accent/10 via-background to-background text-center">
+  <div class="max-w-3xl mx-auto px-6">
+    <h1 class="text-5xl md:text-6xl font-heading font-extrabold text-heading mb-8">
       Get in Touch with <span class="text-accent">Bloom Sis</span>
     </h1>
-    <p class="text-lg md:text-xl text-brand/80 font-body mb-8">
-      We’re here to connect, support, and empower. Reach out for prayer, partnership, or to join our next gathering—your journey matters to us.
+    <p class="text-lg md:text-xl text-brand-80 leading-relaxed max-w-2xl mx-auto">
+      We’re here to connect, support, and empower. Reach out for prayer, partnership, 
+      or to join our next gathering—your journey matters to us.
     </p>
   </div>
 </section>
 
-<!-- Quick Contact CTA Grid -->
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 px-2 scroll-animate scroll-fade-up" style="transition-delay:50ms;">
-  <!-- Email -->
+<!-- Contact Options Grid -->
+<div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-28">
+  <!-- Item -->
   <a href="mailto:info@bloomsis.com" 
-     class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl hover:shadow-3xl border border-accent/30 transition-all duration-300 hover:-translate-y-2 group premium-cta">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
-      <i data-lucide="mail" class="w-8 h-8 text-primary group-hover:scale-110 transition-transform"></i>
+     class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+      <i data-lucide="mail" class="w-7 h-7"></i>
     </span>
-    <h3 class="font-heading font-bold text-xl text-primary mb-1">Email Us</h3>
-    <p class="text-brand/80 text-base mt-1">info@bloomsis.com</p>
+    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Email Us</h3>
+    <p class="text-brand-80 text-sm">info@bloomsis.com</p>
   </a>
 
-  <!-- Phone -->
+  <!-- Item -->
   <a href="tel:+1234567890" 
-     class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl hover:shadow-3xl border border-accent/30 transition-all duration-300 hover:-translate-y-2 group premium-cta">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
-      <i data-lucide="phone" class="w-8 h-8 text-primary group-hover:scale-110 transition-transform"></i>
+     class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+      <i data-lucide="phone" class="w-7 h-7"></i>
     </span>
-    <h3 class="font-heading font-bold text-xl text-primary mb-1">Call Us</h3>
-    <p class="text-brand/80 text-base mt-1">+1 (234) 567-890</p>
+    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Call Us</h3>
+    <p class="text-brand-80 text-sm">+1 (234) 567-890</p>
   </a>
 
-  <!-- Visit -->
-  <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl border border-accent/30 premium-cta">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
-      <i data-lucide="map-pin" class="w-8 h-8 text-primary"></i>
+  <!-- Item -->
+  <div class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md border border-accent/20">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+      <i data-lucide="map-pin" class="w-7 h-7"></i>
     </span>
-    <h3 class="font-heading font-bold text-xl text-primary mb-1">Visit Us</h3>
-    <p class="text-brand/80 text-base mt-1">Toronto, ON</p>
+    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Visit Us</h3>
+    <p class="text-brand-80 text-sm">Toronto, ON</p>
   </div>
 
-  <!-- Socials -->
-  <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl border border-accent/30 premium-cta">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
-      <i data-lucide="share-2" class="w-8 h-8 text-primary"></i>
+  <!-- Item -->
+  <div class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md border border-accent/20">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+      <i data-lucide="share-2" class="w-7 h-7"></i>
     </span>
-    <h3 class="font-heading font-bold text-xl text-primary mb-1">Follow Us</h3>
+    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Follow Us</h3>
     <div class="flex gap-3 mt-3">
-      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-accent/40 via-primary/20 to-white/40 text-primary hover:bg-accent hover:text-background shadow-md transition-all duration-300">
+      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank"
+         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-background transition">
         <i data-lucide="instagram"></i>
       </a>
-      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-accent/40 via-primary/20 to-white/40 text-primary hover:bg-accent hover:text-background shadow-md transition-all duration-300">
+      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank"
+         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-background transition">
         <i data-lucide="youtube"></i>
       </a>
     </div>
   </div>
 </div>
 
-
-  <!-- Seamless Transition to White -->
-  <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
-</section>
-
-
 <!-- Contact Section -->
-<section class="relative py-32 bg-gradient-to-br from-charcoal-dark via-charcoal-dark/95 to-charcoal-dark/90 overflow-hidden">
-  <!-- Background Accents -->
-  <div class="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 blur-3xl rounded-full"></div>
-  <div class="absolute bottom-0 left-1/3 w-80 h-80 bg-primary/10 blur-3xl rounded-full"></div>
-
-  <div class="relative max-w-7xl mx-auto px-6">
-  <!-- Intro Text with Dark Background -->
-  <div class="mb-20 text-center max-w-3xl mx-auto px-8 py-10 bg-charcoal-dark/80 rounded-2xl shadow-xl border border-accent/10 scroll-animate scroll-fade-up">
-      <h2 class="text-5xl md:text-6xl font-heading font-extrabold text-primary leading-tight mb-6">
-        We’d Love to <span class="text-accent">Connect with You</span>
-      </h2>
-      <p class="text-lg md:text-xl text-cream/90 leading-relaxed font-body mb-6">
-        At <span class="font-semibold text-primary">Freedom Life Church</span>, every conversation matters. 
-        Whether you’re exploring faith, seeking prayer, or looking to join our growing family, this is where your journey starts.  
-      </p>
-      <p class="text-lg md:text-xl text-cream/80 leading-relaxed font-body">
-        Reach out today—because freedom in Christ was never meant to be walked alone. 
-        We’re here for you, every step of the way.
-      </p>
+<section class="py-32 bg-gradient-to-br from-accent/5 via-background to-background relative">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    
+    <!-- Form -->
+    <div class="bg-background rounded-xl shadow-lg p-10 border border-accent/20">
+      <h2 class="text-3xl font-heading font-bold text-heading mb-6">Send Us a Message</h2>
+      <form class="grid gap-5">
+        <div>
+          <label class="block text-sm font-semibold text-brand-80 mb-2">Full Name</label>
+          <input type="text" placeholder="Your name"
+                 class="w-full p-4 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-brand-80 mb-2">Email Address</label>
+          <input type="email" placeholder="you@example.com"
+                 class="w-full p-4 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-brand-80 mb-2">Subject</label>
+          <input type="text" placeholder="What’s this about?"
+                 class="w-full p-4 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-brand-80 mb-2">Message</label>
+          <textarea rows="6" placeholder="Write your message here..."
+                    class="w-full p-4 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20"></textarea>
+        </div>
+        <button type="submit"
+                class="w-full bg-accent text-background font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-accent-hover transition">
+          Send Message
+        </button>
+      </form>
     </div>
 
-    <!-- Content Grid -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-      
-      <!-- Contact Form -->
-  <div class="bg-background rounded-3xl shadow-xl p-10 border border-primary/10 scroll-animate scroll-fade-up" style="transition-delay: 100ms;">
-        <form class="grid gap-6">
-          <!-- Name -->
-          <div>
-            <label class="block text-sm font-semibold text-brand/70 mb-2">Full Name</label>
-            <input type="text" placeholder="Your name"
-              class="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm 
-                     focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
-          </div>
-          <!-- Email -->
-          <div>
-            <label class="block text-sm font-semibold text-brand/70 mb-2">Email Address</label>
-            <input type="email" placeholder="you@example.com"
-              class="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm 
-                     focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
-          </div>
-          <!-- Subject -->
-          <div>
-            <label class="block text-sm font-semibold text-brand/70 mb-2">Subject</label>
-            <input type="text" placeholder="What's this about?"
-              class="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm 
-                     focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
-          </div>
-          <!-- Message -->
-          <div>
-            <label class="block text-sm font-semibold text-brand/70 mb-2">Message</label>
-            <textarea rows="6" placeholder="Write your message here..."
-              class="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm 
-                     focus:border-accent focus:ring-2 focus:ring-accent/20 transition"></textarea>
-          </div>
-          <!-- Button -->
-          <button type="submit"
-            class="w-full bg-accent text-background font-semibold py-4 px-8 rounded-xl shadow-lg 
-                   hover:bg-accent-hover hover:scale-[1.02] transition-transform duration-300">
-            Send Message
-          </button>
-        </form>
-      </div>
-
-      <!-- Contact Image -->
-  <div class="relative flex justify-center items-center h-full scroll-animate scroll-fade-up" style="transition-delay: 200ms;">
-        <div class="overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg">
-    <img src="assets/images/image (3).webp" 
-               alt="Women connecting at Bloom Sis event" 
-               class="w-full h-[600px] object-cover object-center" loading="lazy" width="800" height="600">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-3xl"></div>
-        </div>
-      </div>
-
+    <!-- Image -->
+    <div class="relative">
+      <img src="assets/images/image (3).webp" 
+           alt="Women connecting at Bloom Sis event" 
+           class="rounded-xl shadow-lg object-cover w-full h-[600px]">
     </div>
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- Support / Sow Section -->
-<section class="relative py-28 text-background scroll-animate scroll-fade-up" style="transition-delay:300ms;">
-  <!-- Background Image + Overlay -->
-  <div class="absolute inset-0">
-  <img src="assets/images/bw185218.jpg" alt="Support Bloom Sis" class="w-full h-full object-cover opacity-30" aria-hidden="true">
-  <div class="absolute inset-0 bg-gradient-to-br from-[#4B3221]/95 via-background/80 to-background/90"></div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative max-w-5xl mx-auto px-6 text-center space-y-10">
-    <!-- Heading -->
-    <h2 class="text-5xl md:text-6xl font-heading font-extrabold leading-tight mb-4 drop-shadow-hero text-background" style="text-shadow:0 2px 12px rgba(0,0,0,0.18);">
-      Support <span class="text-accent bg-gradient-to-r from-accent via-primary to-white bg-clip-text text-transparent">Bloom Sis</span>
+<!-- Support Section -->
+<section class="py-28 text-center bg-background">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-heading font-extrabold text-heading mb-6">
+      Support <span class="text-accent">Bloom Sis</span>
     </h2>
-    <p class="text-xl md:text-2xl font-body text-background max-w-3xl mx-auto leading-relaxed mb-6 backdrop-blur-md bg-background/80 rounded-2xl px-6 py-4 shadow-lg border border-accent/10" style="color:#2d1a0d;">
-      Your generosity makes gatherings, mentorship, and healing spaces possible.<br>
+    <p class="text-lg md:text-xl text-brand-80 leading-relaxed max-w-2xl mx-auto mb-8">
+      Your generosity makes gatherings, mentorship, and healing spaces possible. 
       Every seed you sow helps women flourish in faith, growth, and legacy.
     </p>
-
-    <!-- Impact Line -->
-    <p class="text-2xl italic font-heading text-primary/90 max-w-2xl mx-auto mb-8" style="color:#eab308;text-shadow:0 2px 8px rgba(0,0,0,0.10);">
+    <p class="text-xl italic font-heading text-accent mb-12">
       “Every seed you sow helps another sister bloom.”
     </p>
-
-    <!-- CTA Buttons -->
-    <nav aria-label="Support actions">
-      <div class="flex flex-wrap justify-center gap-8 mt-6">
-        <a href="sow.html" aria-label="Sow a Seed - Support Bloom Sis"
-           class="px-12 py-5 rounded-full bg-accent text-heading font-semibold shadow-xl 
-                  hover:bg-yellow-500 hover:text-heading hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg tracking-wide border-2 border-accent/40 focus:outline-none focus:ring-4 focus:ring-accent/40">
-          Sow a Seed
-        </a>
-        <a href="about.html" aria-label="Learn More - About Bloom Sis"
-           class="px-12 py-5 rounded-full border-2 border-background/40 text-heading font-semibold shadow-xl 
-                  hover:bg-background hover:text-heading hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg tracking-wide bg-white focus:outline-none focus:ring-4 focus:ring-accent/40">
-          Learn More
-        </a>
-      </div>
-    </nav>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="sow.html" 
+         class="px-10 py-4 rounded-lg bg-accent text-background font-semibold shadow-md hover:bg-accent-hover transition">
+        Sow a Seed
+      </a>
+      <a href="about.html" 
+         class="px-10 py-4 rounded-lg border border-accent/40 text-heading font-semibold shadow-sm hover:bg-accent/10 transition">
+        Learn More
+      </a>
+    </div>
   </div>
 </section>
+
+
+
 
 
 
