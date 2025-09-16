@@ -273,42 +273,44 @@
 
 
 <!-- Support / Sow Section -->
-<section class="relative py-24 text-background">
+<section class="relative py-28 text-background scroll-animate scroll-fade-up" style="transition-delay:300ms;">
   <!-- Background Image + Overlay -->
   <div class="absolute inset-0">
-    <img src="assets/images/bw185218.jpg" alt="Support Bloom Sis" class="w-full h-full object-cover opacity-40">
-    <div class="absolute inset-0 bg-[#4B3221]/90"></div> <!-- matches footer tone -->
+  <img src="assets/images/bw185218.jpg" alt="Support Bloom Sis" class="w-full h-full object-cover opacity-30" aria-hidden="true">
+  <div class="absolute inset-0 bg-gradient-to-br from-[#4B3221]/95 via-background/80 to-background/90"></div>
   </div>
 
   <!-- Content -->
   <div class="relative max-w-5xl mx-auto px-6 text-center space-y-10">
     <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-heading font-bold leading-tight">
-      Support <span class="text-primary">Bloom Sis</span>
+    <h2 class="text-5xl md:text-6xl font-heading font-extrabold leading-tight mb-4 drop-shadow-hero text-background" style="text-shadow:0 2px 12px rgba(0,0,0,0.18);">
+      Support <span class="text-accent bg-gradient-to-r from-accent via-primary to-white bg-clip-text text-transparent">Bloom Sis</span>
     </h2>
-    <p class="text-lg md:text-xl font-body text-background/90 max-w-3xl mx-auto leading-relaxed">
-      Your generosity makes gatherings, mentorship, and healing spaces possible. 
+    <p class="text-xl md:text-2xl font-body text-background max-w-3xl mx-auto leading-relaxed mb-6 backdrop-blur-md bg-background/80 rounded-2xl px-6 py-4 shadow-lg border border-accent/10" style="color:#2d1a0d;">
+      Your generosity makes gatherings, mentorship, and healing spaces possible.<br>
       Every seed you sow helps women flourish in faith, growth, and legacy.
     </p>
 
     <!-- Impact Line -->
-    <p class="text-xl italic font-heading text-primary/90 max-w-2xl mx-auto">
+    <p class="text-2xl italic font-heading text-primary/90 max-w-2xl mx-auto mb-8" style="color:#eab308;text-shadow:0 2px 8px rgba(0,0,0,0.10);">
       “Every seed you sow helps another sister bloom.”
     </p>
 
     <!-- CTA Buttons -->
-    <div class="flex flex-wrap justify-center gap-6">
-      <a href="sow.html" 
-         class="px-10 py-4 rounded-full bg-accent text-background font-semibold shadow-lg 
-                hover:bg-accent-hover hover:scale-105 transition-all duration-300">
-        Sow a Seed
-      </a>
-      <a href="about.html" 
-         class="px-10 py-4 rounded-full border border-background/30 text-background font-semibold shadow-lg 
-                hover:bg-background hover:text-heading hover:scale-105 transition-all duration-300">
-        Learn More
-      </a>
-    </div>
+    <nav aria-label="Support actions">
+      <div class="flex flex-wrap justify-center gap-8 mt-6">
+        <a href="sow.html" aria-label="Sow a Seed - Support Bloom Sis"
+           class="px-12 py-5 rounded-full bg-accent text-heading font-semibold shadow-xl 
+                  hover:bg-yellow-500 hover:text-heading hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg tracking-wide border-2 border-accent/40 focus:outline-none focus:ring-4 focus:ring-accent/40">
+          Sow a Seed
+        </a>
+        <a href="about.html" aria-label="Learn More - About Bloom Sis"
+           class="px-12 py-5 rounded-full border-2 border-background/40 text-heading font-semibold shadow-xl 
+                  hover:bg-background hover:text-heading hover:scale-105 hover:shadow-2xl transition-all duration-300 text-lg tracking-wide bg-white focus:outline-none focus:ring-4 focus:ring-accent/40">
+          Learn More
+        </a>
+      </div>
+    </nav>
   </div>
 </section>
 
