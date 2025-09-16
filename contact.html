@@ -3,56 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contact | Bloom Sis</title>
+  <meta name="description" content="Contact Bloom Sis for prayer, partnership, or to join our next gathering. We’re here to connect, support, and empower your journey." />
+  <link rel="canonical" href="https://bloomsis.com/contact.html" />
+  <meta property="og:title" content="Contact | Bloom Sis" />
+  <meta property="og:description" content="Contact Bloom Sis for prayer, partnership, or to join our next gathering. We’re here to connect, support, and empower your journey." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bloomsis.com/contact.html" />
+  <meta property="og:image" content="https://bloomsis.com/assets/images/image%20(3).webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | Bloom Sis" />
+  <meta name="twitter:description" content="Contact Bloom Sis for prayer, partnership, or to join our next gathering. We’re here to connect, support, and empower your journey." />
+  <meta name="twitter:image" content="https://bloomsis.com/assets/images/image%20(3).webp" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind-config.js"></script>
+  <!-- Tailwind CDN (deferred for non-critical) -->
+  <link rel="preload" as="script" href="https://cdn.tailwindcss.com">
+  <style>
+    /* Critical CSS for hero section */
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #fff; color: #2d1a0d; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .bg-background { background: #fff; }
+    .text-brand { color: #2d1a0d; }
+    .text-accent { color: #eab308; }
+    .text-heading { color: #1a1a1a; }
+    .rounded-3xl { border-radius: 1.5rem; }
+    .shadow-2xl { box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18); }
+    .object-cover { object-fit: cover; }
+    .w-full { width: 100%; }
+    .h-auto { height: auto; }
+    .pt-40 { padding-top: 10rem; }
+    .pb-24 { padding-bottom: 6rem; }
+    .max-w-7xl { max-width: 80rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .grid { display: grid; }
+    .lg\:grid-cols-2 { grid-template-columns: 1fr; }
+    @media (min-width: 1024px) { .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .gap-12 { gap: 3rem; }
+    .items-center { align-items: center; }
+    .text-center { text-align: center; }
+    .lg\:text-left { text-align: left; }
+    @media (min-width: 1024px) { .lg\:text-left { text-align: left; } }
+    .inline-flex { display: inline-flex; }
+    .items-center { align-items: center; }
+    .gap-2 { gap: 0.5rem; }
+    .bg-white\/80 { background: rgba(255,255,255,0.8); }
+    .backdrop-blur-sm { backdrop-filter: blur(4px); }
+    .border { border-width: 1px; }
+    .border-primary\/10 { border-color: rgba(234,179,8,0.1); }
+    .rounded-full { border-radius: 9999px; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .shadow-soft { box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08); }
+    .mb-6 { margin-bottom: 1.5rem; }
+    .justify-center { justify-content: center; }
+    .lg\:justify-start { justify-content: flex-start; }
+    @media (min-width: 1024px) { .lg\:justify-start { justify-content: flex-start; } }
+    .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+    .mb-8 { margin-bottom: 2rem; }
+    .text-6xl { font-size: 3.75rem; line-height: 1; }
+    .md\:text-7xl { font-size: 4.5rem; }
+    .lg\:text-8xl { font-size: 6rem; }
+    .font-extrabold { font-weight: 800; }
+    .leading-tight { line-height: 1.1; }
+    .text-transparent { color: transparent; }
+    .bg-clip-text { -webkit-background-clip: text; background-clip: text; }
+    .bg-gradient-to-r { background-image: linear-gradient(to right, #eab308, #fbbf24, #f59e42); }
+    .w-32 { width: 8rem; }
+    .h-1 { height: 0.25rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .lg\:mx-0 { margin-left: 0; margin-right: 0; }
+    .shadow-md { box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10); }
+    .text-lg { font-size: 1.125rem; }
+    .md\:text-xl { font-size: 1.25rem; }
+    .text-brand\/80 { color: rgba(45,26,13,0.8); }
+    .leading-relaxed { line-height: 1.625; }
+    .max-w-3xl { max-width: 48rem; }
+    .lg\:mx-0 { margin-left: 0; margin-right: 0; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    /* Fixed: drop-shadow utility for hero */
+    .drop-shadow-hero { filter: drop-shadow(0 2px 12px rgba(0,0,0,0.12)); }
+  </style>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="tailwind-config.js" defer></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" media="all">
 </head>
 <body class="font-body bg-background text-brand m-0">
 
   <!-- Header -->
   <div id="header" class="fixed w-full top-0 z-50"></div>
 
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 bg-gradient-to-br from-accent/10 via-background to-background/80 text-center overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-accent/20 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-primary/10 blur-3xl rounded-full"></div>
+  </div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6">
+    <h1 class="text-5xl md:text-6xl font-heading font-extrabold leading-tight text-primary drop-shadow mb-6">
+      Get in Touch with <span class="text-accent">Bloom Sis</span>
+    </h1>
+    <p class="text-lg md:text-xl text-brand/80 font-body mb-8">
+      We’re here to connect, support, and empower. Reach out for prayer, partnership, or to join our next gathering—your journey matters to us.
+    </p>
+  </div>
+</section>
+
 <!-- Quick Contact CTA Grid -->
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
   <!-- Email -->
   <a href="mailto:info@bloomsis.com" 
      class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg hover:shadow-2xl border border-accent/20 transition transform hover:-translate-y-1 group">
-    <i data-lucide="mail" class="w-10 h-10 text-accent mb-4 group-hover:scale-110 transition"></i>
-    <h3 class="font-heading font-bold text-lg text-accent">Email Us</h3>
+  <i data-lucide="mail" class="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition"></i>
+  <h3 class="font-heading font-bold text-lg text-primary">Email Us</h3>
     <p class="text-cream/80 text-sm mt-2">info@bloomsis.com</p>
   </a>
 
   <!-- Phone -->
   <a href="tel:+1234567890" 
      class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg hover:shadow-2xl border border-accent/20 transition transform hover:-translate-y-1 group">
-    <i data-lucide="phone" class="w-10 h-10 text-accent mb-4 group-hover:scale-110 transition"></i>
-    <h3 class="font-heading font-bold text-lg text-accent">Call Us</h3>
+  <i data-lucide="phone" class="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition"></i>
+  <h3 class="font-heading font-bold text-lg text-primary">Call Us</h3>
     <p class="text-cream/80 text-sm mt-2">+1 (234) 567-890</p>
   </a>
 
   <!-- Visit -->
   <div class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg border border-accent/20">
-    <i data-lucide="map-pin" class="w-10 h-10 text-accent mb-4"></i>
-    <h3 class="font-heading font-bold text-lg text-accent">Visit Us</h3>
+  <i data-lucide="map-pin" class="w-10 h-10 text-primary mb-4"></i>
+  <h3 class="font-heading font-bold text-lg text-primary">Visit Us</h3>
     <p class="text-cream/80 text-sm mt-2">Toronto, ON</p>
   </div>
 
   <!-- Socials -->
   <div class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg border border-accent/20">
-    <i data-lucide="share-2" class="w-10 h-10 text-accent mb-4"></i>
-    <h3 class="font-heading font-bold text-lg text-accent">Follow Us</h3>
+  <i data-lucide="share-2" class="w-10 h-10 text-primary mb-4"></i>
+  <h3 class="font-heading font-bold text-lg text-primary">Follow Us</h3>
     <div class="flex gap-3 mt-3">
-      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener"
-         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/20 text-accent hover:bg-accent hover:text-background transition">
+    <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener"
+      class="w-9 h-9 flex items-center justify-center rounded-full bg-primary/20 text-primary hover:bg-accent hover:text-background transition">
         <i data-lucide="instagram"></i>
       </a>
-      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener"
-         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/20 text-accent hover:bg-accent hover:text-background transition">
+    <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener"
+      class="w-9 h-9 flex items-center justify-center rounded-full bg-primary/20 text-primary hover:bg-accent hover:text-background transition">
         <i data-lucide="youtube"></i>
       </a>
     </div>
@@ -64,7 +162,6 @@
   <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
 </section>
 
-1
 
 <!-- Contact Section -->
 <section class="relative py-32 bg-gradient-to-br from-charcoal-dark via-charcoal-dark/95 to-charcoal-dark/90 overflow-hidden">
@@ -75,11 +172,11 @@
   <div class="relative max-w-7xl mx-auto px-6">
     <!-- Intro Text with Dark Background -->
     <div class="mb-20 text-center max-w-3xl mx-auto px-8 py-10 bg-charcoal-dark/80 rounded-2xl shadow-xl border border-accent/10">
-      <h2 class="text-5xl md:text-6xl font-heading font-extrabold text-accent leading-tight mb-6">
-        We’d Love to <span class="text-cream">Connect with You</span>
+      <h2 class="text-5xl md:text-6xl font-heading font-extrabold text-primary leading-tight mb-6">
+        We’d Love to <span class="text-accent">Connect with You</span>
       </h2>
       <p class="text-lg md:text-xl text-cream/90 leading-relaxed font-body mb-6">
-        At <span class="font-semibold text-accent">Freedom Life Church</span>, every conversation matters. 
+        At <span class="font-semibold text-primary">Freedom Life Church</span>, every conversation matters. 
         Whether you’re exploring faith, seeking prayer, or looking to join our growing family, this is where your journey starts.  
       </p>
       <p class="text-lg md:text-xl text-cream/80 leading-relaxed font-body">
@@ -134,9 +231,9 @@
       <!-- Contact Image -->
       <div class="relative flex justify-center items-center h-full">
         <div class="overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg">
-          <img src="assets/images/image (3).webp" 
-               alt="Connect with Freedom Life Church" 
-               class="w-full h-[600px] object-cover object-center">
+    <img src="assets/images/image (3).webp" 
+               alt="Women connecting at Bloom Sis event" 
+               class="w-full h-[600px] object-cover object-center" loading="lazy" width="800" height="600">
           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-3xl"></div>
         </div>
       </div>
@@ -168,7 +265,7 @@
   <div class="relative max-w-5xl mx-auto px-6 text-center space-y-10">
     <!-- Heading -->
     <h2 class="text-4xl md:text-5xl font-heading font-bold leading-tight">
-      Support <span class="text-accent">Bloom Sis</span>
+      Support <span class="text-primary">Bloom Sis</span>
     </h2>
     <p class="text-lg md:text-xl font-body text-background/90 max-w-3xl mx-auto leading-relaxed">
       Your generosity makes gatherings, mentorship, and healing spaces possible. 
@@ -176,7 +273,7 @@
     </p>
 
     <!-- Impact Line -->
-    <p class="text-xl italic font-heading text-accent/90 max-w-2xl mx-auto">
+    <p class="text-xl italic font-heading text-primary/90 max-w-2xl mx-auto">
       “Every seed you sow helps another sister bloom.”
     </p>
 
@@ -210,7 +307,7 @@
   <!-- Include Header & Footer -->
   <script src="include.js"></script>
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <script>lucide.createIcons();</script>
 
 </body>

@@ -3,14 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Bloom Sis</title>
+  <title>About Bloom Sis | Faith, Healing & Community</title>
+  <meta name="description" content="Learn about Bloom Sis—a faith-driven community empowering women to flourish in spirit, soul, and body through healing, connection, and purpose. Discover our story, mission, and pillars." />
+  <link rel="canonical" href="https://bloomsis.com/about.html" />
+  <meta property="og:title" content="About Bloom Sis | Faith, Healing & Community" />
+  <meta property="og:description" content="Learn about Bloom Sis—a faith-driven community empowering women to flourish in spirit, soul, and body through healing, connection, and purpose." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bloomsis.com/about.html" />
+  <meta property="og:image" content="https://bloomsis.com/assets/images/image%20(2).webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Bloom Sis | Faith, Healing & Community" />
+  <meta name="twitter:description" content="Learn about Bloom Sis—a faith-driven community empowering women to flourish in spirit, soul, and body through healing, connection, and purpose." />
+  <meta name="twitter:image" content="https://bloomsis.com/assets/images/image%20(2).webp" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="tailwind-config.js"></script>
+  <!-- Tailwind CDN (deferred for non-critical) -->
+  <link rel="preload" as="script" href="https://cdn.tailwindcss.com">
+  <style>
+    /* Critical CSS for hero section */
+    body { margin: 0; font-family: 'Inter', sans-serif; background: #fff; color: #2d1a0d; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .bg-background { background: #fff; }
+    .text-brand { color: #2d1a0d; }
+    .text-accent { color: #eab308; }
+    .text-heading { color: #1a1a1a; }
+    .rounded-3xl { border-radius: 1.5rem; }
+    .shadow-2xl { box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18); }
+    .object-cover { object-fit: cover; }
+    .w-full { width: 100%; }
+    .h-auto { height: auto; }
+    .pt-40 { padding-top: 10rem; }
+    .pb-24 { padding-bottom: 6rem; }
+    .max-w-7xl { max-width: 80rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .grid { display: grid; }
+    .lg\:grid-cols-2 { grid-template-columns: 1fr; }
+    @media (min-width: 1024px) { .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .gap-12 { gap: 3rem; }
+    .items-center { align-items: center; }
+    .text-center { text-align: center; }
+    .lg\:text-left { text-align: left; }
+    @media (min-width: 1024px) { .lg\:text-left { text-align: left; } }
+    .inline-flex { display: inline-flex; }
+    .items-center { align-items: center; }
+    .gap-2 { gap: 0.5rem; }
+    .bg-white\/80 { background: rgba(255,255,255,0.8); }
+    .backdrop-blur-sm { backdrop-filter: blur(4px); }
+    .border { border-width: 1px; }
+    .border-primary\/10 { border-color: rgba(234,179,8,0.1); }
+    .rounded-full { border-radius: 9999px; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .shadow-soft { box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08); }
+    .mb-6 { margin-bottom: 1.5rem; }
+    .justify-center { justify-content: center; }
+    .lg\:justify-start { justify-content: flex-start; }
+    @media (min-width: 1024px) { .lg\:justify-start { justify-content: flex-start; } }
+    .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+    .mb-8 { margin-bottom: 2rem; }
+    .text-6xl { font-size: 3.75rem; line-height: 1; }
+    .md\:text-7xl { font-size: 4.5rem; }
+    .lg\:text-8xl { font-size: 6rem; }
+    .font-extrabold { font-weight: 800; }
+    .leading-tight { line-height: 1.1; }
+    .text-transparent { color: transparent; }
+    .bg-clip-text { -webkit-background-clip: text; background-clip: text; }
+    .bg-gradient-to-r { background-image: linear-gradient(to right, #eab308, #fbbf24, #f59e42); }
+    .w-32 { width: 8rem; }
+    .h-1 { height: 0.25rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .lg\:mx-0 { margin-left: 0; margin-right: 0; }
+    .shadow-md { box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10); }
+    .text-lg { font-size: 1.125rem; }
+    .md\:text-xl { font-size: 1.25rem; }
+    .text-brand\/80 { color: rgba(45,26,13,0.8); }
+    .leading-relaxed { line-height: 1.625; }
+    .max-w-3xl { max-width: 48rem; }
+    .lg\:mx-0 { margin-left: 0; margin-right: 0; }
+    .font-body { font-family: 'Inter', sans-serif; }
+  </style>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="tailwind-config.js" defer></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" onload="this.rel='stylesheet'">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" media="all">
 </head>
 <body class="font-body bg-background text-brand m-0">
 
@@ -33,21 +113,21 @@
       </div>
 
       <div class="space-y-4 mb-8">
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[0.9] text-primary">
-          Discover
-          <span class="block text-accent">Bloom Sis</span>
+        <h1 class="text-6xl md:text-7xl lg:text-8xl font-heading font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-luxury drop-shadow-[0_2px_12px_rgba(0,0,0,0.12)]">
+          Welcome to <span class="block text-accent font-playfair">Bloom Sis <span class="inline-block align-middle">🌻</span></span>
         </h1>
-        <div class="w-24 h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full mx-auto lg:mx-0"></div>
+        <div class="w-32 h-1 bg-gradient-to-r from-accent via-luxury to-primary rounded-full mx-auto lg:mx-0 shadow-md"></div>
       </div>
 
       <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl mx-auto lg:mx-0 font-body">
-        Bloom Sis is a movement and community dedicated to supporting women in their journey of faith, healing, and holistic growth. Through connection, mentorship, and empowerment, we nurture spiritual, emotional, and physical well-being.
+        Bloom Sis is a welcoming faith-driven community for all women, dedicated to nurturing growth, healing, and purpose. <br><br>
+        Founded in 2018 as a small soul care circle, Bloom Sis has blossomed into a vibrant movement where women are empowered to flourish—spirit, soul, and body. <br><br>
       </p>
     </div>
 
     <!-- Hero Image -->
     <div class="relative mt-10 lg:mt-0">
-      <img src="assets\images\image (2).webp" alt="Bloom Sis Community" class="w-full h-auto rounded-3xl shadow-2xl object-cover">
+      <img src="assets/images/image (2).webp" alt="Bloom Sis Community of women" class="w-full h-auto rounded-3xl shadow-2xl object-cover" loading="lazy" width="800" height="533">
       <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent rounded-3xl"></div>
     </div>
   </div>
@@ -68,8 +148,8 @@
   <div class="relative max-w-7xl mx-auto px-6 space-y-20">
 
     <!-- Mission Card -->
-    <div class="text-center opacity-0 animate-fade-up [animation-delay:200ms]">
-      <div class="bg-gradient-to-br from-accent/5 to-luxury/30 rounded-3xl p-12 border border-accent/20 shadow-lg">
+  <div class="text-center fade-up">
+  <div class="bg-gradient-to-br from-accent/5 to-luxury/30 rounded-3xl p-12 border border-accent/20 shadow-lg fade-up">
         <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-8">
           Our <span class="text-accent">Mission</span>
         </h2>
@@ -86,11 +166,10 @@
     </div>
 
     <!-- Core Values -->
-    <div class="grid md:grid-cols-3 gap-10">
+  <div class="grid md:grid-cols-3 gap-10 fade-up">
       <!-- Card -->
-      <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-                  hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 
-                  opacity-0 animate-fade-up [animation-delay:400ms]">
+  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
+      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Community & Connection
         </h3>
@@ -100,9 +179,8 @@
       </div>
 
       <!-- Card -->
-      <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-                  hover:shadow-2xl hover:-translate-y-1 transition-all duration-500
-                  opacity-0 animate-fade-up [animation-delay:600ms]">
+  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
+      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Spiritual Care
         </h3>
@@ -112,9 +190,8 @@
       </div>
 
       <!-- Card -->
-      <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-                  hover:shadow-2xl hover:-translate-y-1 transition-all duration-500
-                  opacity-0 animate-fade-up [animation-delay:800ms]">
+  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
+      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Self-Love & Empowerment
         </h3>
@@ -149,47 +226,55 @@
     <!-- Row 1: Our Story with Image -->
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Story Text -->
-      <div class="space-y-6 opacity-0 animate-fade-up [animation-delay:200ms]">
+  <div class="space-y-6 fade-up">
         <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-4">
           Our <span class="text-accent">Story</span>
         </h2>
         <div class="w-20 h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full mb-6"></div>
         <div class="space-y-5 text-brand/80 leading-relaxed font-body text-lg md:text-xl">
           <p>
-            Bloom Sis was founded in 2018 as a small gathering of women focused on soul care and spiritual growth. Over the years, it evolved into a vibrant brand and community supporting thousands of women to connect, heal, and thrive in all areas of life.
+            Our story is one of transformation—spirit, soul, and body. We believe every woman deserves a space to flourish, find wholeness, and walk in her God-given identity. Through gatherings, mentorship, and authentic relationships, Bloom Sis offers a place to grow, heal, and belong.
+          </p>
+          <ul class="list-disc pl-6 text-base md:text-lg text-primary font-semibold mb-4">
+            <li>Past BLOOM Gatherings & Worship Moments</li>
+            <li>Selah Series: real stories, real healing</li>
+            <li>Panels, teachings & tools for your growth</li>
+            <li>A community to walk with you as you heal</li>
+          </ul>
+          <p>
+            Our pillars—Emotional Wholeness, Spiritual Care, Body Care, Generational Healing, Community, and Self-Love—shape everything we do. We’re committed to creating safe spaces for real conversations, worship, learning, and legacy-building.
           </p>
           <p>
-            Our vision is to create inclusive spaces where women of all backgrounds can experience empowerment, faith, and meaningful connection.
+            Whether you’re seeking encouragement, resources, or a sisterhood to walk with you, Bloom Sis welcomes you. Here, you’ll find stories of hope, tools for growth, and a community that celebrates every step of your journey.
           </p>
+          <span class="font-heading text-accent font-bold">You belong here. Welcome to Bloom Sis.</span>
         </div>
       </div>
 
       <!-- Story Image -->
-      <div class="relative w-full max-w-sm mx-auto rounded-3xl overflow-hidden shadow-xl 
-                  hover:shadow-2xl hover:scale-105 transition-all duration-700 ease-out 
-                  opacity-0 animate-fade-up [animation-delay:400ms]">
-        <img src="assets/images/BLOOM_CAM2268.JPG" 
-             alt="Bloom Sis community" 
-             class="w-full h-auto object-cover aspect-[4/5]">
+  <div class="relative w-full max-w-sm mx-auto rounded-3xl overflow-hidden shadow-xl 
+      hover:shadow-2xl hover:scale-105 transition-all duration-700 ease-out fade-up">
+     <img src="assets/images/BLOOM_CAM2268.JPG" 
+       alt="Bloom Sis Gathering event photo" 
+       class="w-full h-auto object-cover aspect-[4/5]" loading="lazy" width="400" height="500">
         <div class="absolute inset-0 bg-gradient-to-t from-heading/20 to-transparent"></div>
       </div>
     </div>
 
     <!-- Row 2: Meet Our Founder -->
-    <div class="bg-background rounded-3xl p-12 shadow-lg border border-luxury/30 text-center 
-                opacity-0 animate-fade-up [animation-delay:600ms]">
+  <div class="bg-background rounded-3xl p-12 shadow-lg border border-luxury/30 text-center fade-up">
       <h3 class="text-3xl md:text-4xl font-heading font-bold text-heading mb-6">
         Meet Our <span class="text-accent">Founder</span>
       </h3>
 
       <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-8">
         <!-- Founder Image -->
-        <img src="assets/images/rs=w_365,h_365,cg_true,m.webp" 
-             alt="Jessica Robinson-Grant" 
-             class="w-28 h-28 rounded-full object-cover border-4 border-accent shadow-md">
+     <img src="assets/images/rs=w_365,h_365,cg_true,m.webp" 
+       alt="Jessica Robinson-Grant, Bloom Sis Founder" 
+       class="w-28 h-28 rounded-full object-cover border-4 border-accent shadow-md" loading="lazy" width="112" height="112">
 
         <!-- Founder Text + CTAs -->
-        <div class="space-y-5 text-brand/80 leading-relaxed font-body max-w-xl text-left sm:text-left">
+  <div class="space-y-5 text-brand/80 leading-relaxed font-body max-w-xl text-left sm:text-left fade-up">
           <p>
             Jessica Robinson-Grant founded <strong>Bloom Sis</strong> to create a safe, empowering space where women could flourish spiritually, emotionally, and physically. Her passion for mentorship and holistic growth has inspired thousands to connect, heal, and thrive.
           </p>
@@ -213,10 +298,7 @@
 
           <!-- Social Media Links -->
           <div class="flex justify-start gap-4 mt-6">
-            <a href="https://www.facebook.com/BloomSis" target="_blank" 
-               class="text-accent hover:text-accent-hover transition text-2xl">
-              <i class="fab fa-facebook"></i>
-            </a>
+            
             <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" 
                class="text-accent hover:text-accent-hover transition text-2xl">
               <i class="fab fa-instagram"></i>
@@ -292,10 +374,36 @@
   0% { opacity: 0; transform: translateY(40px) scale(0.97); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-.animate-fade-up {
-  animation: fade-up 1.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 </style>
+<script>
+  // Tasteful scroll-triggered fade-up animation
+  document.addEventListener('DOMContentLoaded', function() {
+    const animatedEls = document.querySelectorAll('.fade-up');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      animatedEls.forEach(el => observer.observe(el));
+    } else {
+      // Fallback: show all if no IntersectionObserver
+      animatedEls.forEach(el => el.classList.add('visible'));
+    }
+  });
+</script>
 
 
 
@@ -305,7 +413,7 @@
   <!-- Include Header & Footer -->
   <script src="include.js"></script>
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
   <script>lucide.createIcons();</script>
 
 </body>
