@@ -86,6 +86,17 @@
     .font-body { font-family: 'Inter', sans-serif; }
     /* Fixed: drop-shadow utility for hero */
     .drop-shadow-hero { filter: drop-shadow(0 2px 12px rgba(0,0,0,0.12)); }
+    /* Scroll animation utilities */
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+      will-change: opacity, transform;
+    }
+    .scroll-animate.scroll-in-view {
+      opacity: 1;
+      transform: none;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com" defer></script>
   <script src="tailwind-config.js" defer></script>
@@ -116,41 +127,49 @@
 </section>
 
 <!-- Quick Contact CTA Grid -->
-<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 px-2 scroll-animate scroll-fade-up" style="transition-delay:50ms;">
   <!-- Email -->
   <a href="mailto:info@bloomsis.com" 
-     class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg hover:shadow-2xl border border-accent/20 transition transform hover:-translate-y-1 group">
-  <i data-lucide="mail" class="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition"></i>
-  <h3 class="font-heading font-bold text-lg text-primary">Email Us</h3>
-    <p class="text-cream/80 text-sm mt-2">info@bloomsis.com</p>
+     class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl hover:shadow-3xl border border-accent/30 transition-all duration-300 hover:-translate-y-2 group premium-cta">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
+      <i data-lucide="mail" class="w-8 h-8 text-primary group-hover:scale-110 transition-transform"></i>
+    </span>
+    <h3 class="font-heading font-bold text-xl text-primary mb-1">Email Us</h3>
+    <p class="text-brand/80 text-base mt-1">info@bloomsis.com</p>
   </a>
 
   <!-- Phone -->
   <a href="tel:+1234567890" 
-     class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg hover:shadow-2xl border border-accent/20 transition transform hover:-translate-y-1 group">
-  <i data-lucide="phone" class="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition"></i>
-  <h3 class="font-heading font-bold text-lg text-primary">Call Us</h3>
-    <p class="text-cream/80 text-sm mt-2">+1 (234) 567-890</p>
+     class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl hover:shadow-3xl border border-accent/30 transition-all duration-300 hover:-translate-y-2 group premium-cta">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
+      <i data-lucide="phone" class="w-8 h-8 text-primary group-hover:scale-110 transition-transform"></i>
+    </span>
+    <h3 class="font-heading font-bold text-xl text-primary mb-1">Call Us</h3>
+    <p class="text-brand/80 text-base mt-1">+1 (234) 567-890</p>
   </a>
 
   <!-- Visit -->
-  <div class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg border border-accent/20">
-  <i data-lucide="map-pin" class="w-10 h-10 text-primary mb-4"></i>
-  <h3 class="font-heading font-bold text-lg text-primary">Visit Us</h3>
-    <p class="text-cream/80 text-sm mt-2">Toronto, ON</p>
+  <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl border border-accent/30 premium-cta">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
+      <i data-lucide="map-pin" class="w-8 h-8 text-primary"></i>
+    </span>
+    <h3 class="font-heading font-bold text-xl text-primary mb-1">Visit Us</h3>
+    <p class="text-brand/80 text-base mt-1">Toronto, ON</p>
   </div>
 
   <!-- Socials -->
-  <div class="flex flex-col items-center justify-center p-8 rounded-2xl bg-charcoal-dark text-cream shadow-lg border border-accent/20">
-  <i data-lucide="share-2" class="w-10 h-10 text-primary mb-4"></i>
-  <h3 class="font-heading font-bold text-lg text-primary">Follow Us</h3>
+  <div class="flex flex-col items-center justify-center p-8 rounded-3xl bg-white/30 backdrop-blur-md text-brand shadow-2xl border border-accent/30 premium-cta">
+    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 via-primary/10 to-white/40 shadow-lg mb-4">
+      <i data-lucide="share-2" class="w-8 h-8 text-primary"></i>
+    </span>
+    <h3 class="font-heading font-bold text-xl text-primary mb-1">Follow Us</h3>
     <div class="flex gap-3 mt-3">
-    <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener"
-      class="w-9 h-9 flex items-center justify-center rounded-full bg-primary/20 text-primary hover:bg-accent hover:text-background transition">
+      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" rel="noopener"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-accent/40 via-primary/20 to-white/40 text-primary hover:bg-accent hover:text-background shadow-md transition-all duration-300">
         <i data-lucide="instagram"></i>
       </a>
-    <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener"
-      class="w-9 h-9 flex items-center justify-center rounded-full bg-primary/20 text-primary hover:bg-accent hover:text-background transition">
+      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank" rel="noopener"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-br from-accent/40 via-primary/20 to-white/40 text-primary hover:bg-accent hover:text-background shadow-md transition-all duration-300">
         <i data-lucide="youtube"></i>
       </a>
     </div>
@@ -170,8 +189,8 @@
   <div class="absolute bottom-0 left-1/3 w-80 h-80 bg-primary/10 blur-3xl rounded-full"></div>
 
   <div class="relative max-w-7xl mx-auto px-6">
-    <!-- Intro Text with Dark Background -->
-    <div class="mb-20 text-center max-w-3xl mx-auto px-8 py-10 bg-charcoal-dark/80 rounded-2xl shadow-xl border border-accent/10">
+  <!-- Intro Text with Dark Background -->
+  <div class="mb-20 text-center max-w-3xl mx-auto px-8 py-10 bg-charcoal-dark/80 rounded-2xl shadow-xl border border-accent/10 scroll-animate scroll-fade-up">
       <h2 class="text-5xl md:text-6xl font-heading font-extrabold text-primary leading-tight mb-6">
         We’d Love to <span class="text-accent">Connect with You</span>
       </h2>
@@ -186,10 +205,10 @@
     </div>
 
     <!-- Content Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       
       <!-- Contact Form -->
-      <div class="bg-background rounded-3xl shadow-xl p-10 border border-primary/10">
+  <div class="bg-background rounded-3xl shadow-xl p-10 border border-primary/10 scroll-animate scroll-fade-up" style="transition-delay: 100ms;">
         <form class="grid gap-6">
           <!-- Name -->
           <div>
@@ -229,7 +248,7 @@
       </div>
 
       <!-- Contact Image -->
-      <div class="relative flex justify-center items-center h-full">
+  <div class="relative flex justify-center items-center h-full scroll-animate scroll-fade-up" style="transition-delay: 200ms;">
         <div class="overflow-hidden rounded-3xl shadow-2xl w-full max-w-lg">
     <img src="assets/images/image (3).webp" 
                alt="Women connecting at Bloom Sis event" 
@@ -308,7 +327,30 @@
   <script src="include.js"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script>lucide.createIcons();</script>
+  <script>
+    // Ensure Lucide icons are rendered after DOM and dynamic content
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.lucide && typeof lucide.createIcons === 'function') {
+        lucide.createIcons();
+      }
+    });
+  </script>
+  <script>
+    // Scroll animation for contact section
+    document.addEventListener('DOMContentLoaded', function() {
+      var observer = new window.IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.scroll-animate').forEach(function(el) {
+        observer.observe(el);
+      });
+    });
+  </script>
 
 </body>
 </html>
