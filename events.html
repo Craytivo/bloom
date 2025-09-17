@@ -99,25 +99,33 @@
   <!-- Header -->
   <div id="header" class="fixed w-full top-0 z-50"></div>
 
+<!-- Google Font for Digital Counter -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
 <!-- Hero Section with Countdown for Bloom 2026 -->
-<section class="relative w-full pt-40 pb-24 bg-gradient-to-br from-secondary via-background to-background overflow-hidden">
+<section class="relative w-full pt-40 pb-24 bg-background overflow-hidden">
+  <!-- Decorative Accents -->
   <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-accent/5 to-primary/5 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 left-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
   </div>
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    
     <!-- Left Column: Text & Countdown -->
     <div class="text-center lg:text-left space-y-6">
-      <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-primary/10 rounded-full px-4 py-2 shadow-soft mb-6 justify-center lg:justify-start">
+      <!-- Label -->
+      <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-accent/20 rounded-full px-4 py-2 shadow-sm mb-6">
         <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-        <span class="text-sm font-medium text-primary">Bloom 2026 Gathering</span>
+        <span class="text-sm font-medium text-heading">Bloom 2026 Gathering</span>
       </div>
 
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[0.9] text-primary mb-4">
-        Join <span class="block text-accent">Bloom 2026</span>
+      <!-- Heading -->
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] text-heading mb-4">
+        Join <span class="block text-heading">Bloom 2026</span>
       </h1>
 
+      <!-- Paragraphs -->
       <p class="text-lg md:text-xl text-brand/80 leading-relaxed max-w-3xl font-body">
         Connect with inspiring speakers, engage in transformative workshops, and experience a community that uplifts and empowers every step of your faith journey.
       </p>
@@ -127,34 +135,49 @@
       </p>
 
       <!-- Countdown Timer -->
-      <div class="mt-6 grid grid-cols-4 gap-4 text-center">
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
         <div class="bg-primary/10 rounded-xl p-4">
-          <span id="days" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span id="days" class="counter block text-3xl font-bold text-accent">0</span>
           <span class="text-sm font-medium text-brand/80">Days</span>
         </div>
         <div class="bg-primary/10 rounded-xl p-4">
-          <span id="hours" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span id="hours" class="counter block text-3xl font-bold text-accent">0</span>
           <span class="text-sm font-medium text-brand/80">Hours</span>
         </div>
         <div class="bg-primary/10 rounded-xl p-4">
-          <span id="minutes" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span id="minutes" class="counter block text-3xl font-bold text-accent">0</span>
           <span class="text-sm font-medium text-brand/80">Minutes</span>
         </div>
         <div class="bg-primary/10 rounded-xl p-4">
-          <span id="seconds" class="block text-3xl font-heading font-bold text-accent">0</span>
+          <span id="seconds" class="counter block text-3xl font-bold text-accent">0</span>
           <span class="text-sm font-medium text-brand/80">Seconds</span>
         </div>
       </div>
 
-      <a href="https://brushfire.com/bloomsisgathering/conference/610912/details" class="inline-block mt-6 bg-accent text-background font-semibold py-4 px-10 rounded-xl hover:scale-105 transition-all duration-300 shadow-xl text-lg">
-        Get Your Tickets
+      <!-- CTA -->
+      <a href="https://brushfire.com/bloomsisgathering/conference/610912/details" 
+         class="inline-block mt-6 bg-accent text-heading font-semibold py-4 px-10 rounded-xl shadow-md hover:bg-accent-hover hover:scale-105 transition-all duration-300 text-lg">
+        🌿 Secure Your Seat
       </a>
     </div>
 
     <!-- Right Column: Hero Image -->
-    <div class="relative mt-10 lg:mt-0">
-  <img src="assets/images/BLOOM_CAM2219.JPG" alt="Bloom 2026 Event" class="w-full h-auto rounded-3xl shadow-2xl object-cover" loading="lazy" width="800" height="533">
-      <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent rounded-3xl"></div>
+    <div class="relative group mt-10 lg:mt-0">
+      <!-- Decorative Border -->
+      <div class="absolute -top-6 -left-6 w-full h-full border-4 border-accent/20 rounded-3xl group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform duration-500"></div>
+
+      <!-- Image -->
+      <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+        <img src="assets/images/BLOOM_CAM2219.JPG" 
+             alt="Bloom 2026 Event" 
+             class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700 ease-out rounded-3xl">
+        <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent"></div>
+      </div>
+
+      <!-- Caption -->
+      <p class="mt-4 text-sm md:text-base text-brand/70 text-center font-body italic">
+        Captured at Bloom 2025 — a moment of joy and connection.
+      </p>
     </div>
   </div>
 
@@ -162,11 +185,35 @@
   <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent"></div>
 </section>
 
+<!-- Styles -->
+<style>
+/* Digital Counter Font */
+.counter {
+  font-family: 'Orbitron', monospace;
+  position: relative;
+  display: inline-block;
+}
+
+/* Slow shimmer overlay */
+.counter::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.5) 50%, transparent 100%);
+  animation: shimmer 8s infinite linear;
+  background-size: 200% 100%;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+</style>
+
 <!-- Countdown Timer Script -->
 <script>
-  // Set the date for Bloom 2026
   const eventDate = new Date("June 5, 2026 09:00:00").getTime();
-
   const countdown = () => {
     const now = new Date().getTime();
     const distance = eventDate - now;
@@ -181,9 +228,11 @@
     document.getElementById("minutes").innerText = minutes;
     document.getElementById("seconds").innerText = seconds;
   };
-
   setInterval(countdown, 1000);
 </script>
+
+
+
 
 <!-- Legacy Makers Section (Two Columns with Visual Accents) -->
 <section class="relative py-20 bg-gradient-to-br from-background via-secondary/20 to-background overflow-hidden">
