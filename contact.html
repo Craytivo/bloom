@@ -110,75 +110,128 @@
   <!-- Header -->
   <div id="header" class="fixed w-full top-0 z-50"></div>
 
-<!-- Hero -->
-<section class="relative pt-40 pb-20 bg-gradient-to-br from-accent/10 via-background to-background text-center">
-  <div class="max-w-3xl mx-auto px-6">
-    <h1 class="text-5xl md:text-6xl font-heading font-extrabold text-heading mb-8">
-      Get in Touch with <span class="text-accent">Bloom Sis</span>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-28 bg-background text-center overflow-hidden">
+  <!-- Background texture overlay -->
+  <div class="absolute inset-0">
+    <img src="assets/images/full-bloom.webp" alt="" class="w-full h-full object-cover opacity-10" />
+    <div class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/90 to-white"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+    <!-- Headline -->
+    <h1 class="fade-up text-5xl md:text-6xl font-heading font-extrabold text-heading mb-8 leading-tight">
+      You Don’t Have to <span class="text-accent">Walk Alone</span>
     </h1>
-    <p class="text-lg md:text-xl text-brand-80 leading-relaxed max-w-2xl mx-auto">
-      We’re here to connect, support, and empower. Reach out for prayer, partnership, 
-      or to join our next gathering—your journey matters to us.
+    <!-- Subtext -->
+    <p class="fade-up text-lg md:text-xl text-brand-80 leading-relaxed max-w-2xl mx-auto mb-14 [animation-delay:200ms]">
+      At Bloom Sis, every prayer, every conversation, and every connection matters. 
+      Whether you’re seeking healing, guidance, or simply a community to belong to, 
+      we’re here to walk beside you in faith and love.
     </p>
+
+    <!-- Contact Options Grid inside Hero -->
+    <div class="fade-up grid sm:grid-cols-2 lg:grid-cols-4 gap-8 [animation-delay:400ms]">
+      <!-- Email -->
+      <a href="mailto:info@bloomsis.com" 
+         class="flex flex-col items-center text-center p-8 rounded-xl bg-white shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
+        <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+          <i data-lucide="mail" class="w-7 h-7"></i>
+        </span>
+        <h3 class="font-heading font-semibold text-lg text-heading mb-1">Email Us</h3>
+        <p class="text-brand-80 text-sm">info@bloomsis.com</p>
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+1234567890" 
+         class="flex flex-col items-center text-center p-8 rounded-xl bg-white shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
+        <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+          <i data-lucide="phone" class="w-7 h-7"></i>
+        </span>
+        <h3 class="font-heading font-semibold text-lg text-heading mb-1">Call Us</h3>
+        <p class="text-brand-80 text-sm">+1 (234) 567-890</p>
+      </a>
+
+      <!-- Visit -->
+      <div class="flex flex-col items-center text-center p-8 rounded-xl bg-white shadow-md border border-accent/20">
+        <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+          <i data-lucide="map-pin" class="w-7 h-7"></i>
+        </span>
+        <h3 class="font-heading font-semibold text-lg text-heading mb-1">Visit Us</h3>
+        <p class="text-brand-80 text-sm">Toronto, ON</p>
+      </div>
+
+      <!-- Socials -->
+      <div class="flex flex-col items-center text-center p-8 rounded-xl bg-white shadow-md border border-accent/20">
+        <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
+          <i data-lucide="share-2" class="w-7 h-7"></i>
+        </span>
+        <h3 class="font-heading font-semibold text-lg text-heading mb-1">Follow Us</h3>
+        <div class="flex gap-3 mt-3">
+          <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank"
+             class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-white transition">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank"
+             class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-white transition">
+            <i data-lucide="youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Contact Options Grid -->
-<div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-28">
-  <!-- Item -->
-  <a href="mailto:info@bloomsis.com" 
-     class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
-      <i data-lucide="mail" class="w-7 h-7"></i>
-    </span>
-    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Email Us</h3>
-    <p class="text-brand-80 text-sm">info@bloomsis.com</p>
-  </a>
+<!-- Fade-up animation -->
+<style>
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+}
+.fade-up.visible {
+  animation: fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => observer.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+});
+</script>
 
-  <!-- Item -->
-  <a href="tel:+1234567890" 
-     class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md hover:shadow-lg border border-accent/20 hover:-translate-y-1 transition">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
-      <i data-lucide="phone" class="w-7 h-7"></i>
-    </span>
-    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Call Us</h3>
-    <p class="text-brand-80 text-sm">+1 (234) 567-890</p>
-  </a>
 
-  <!-- Item -->
-  <div class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md border border-accent/20">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
-      <i data-lucide="map-pin" class="w-7 h-7"></i>
-    </span>
-    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Visit Us</h3>
-    <p class="text-brand-80 text-sm">Toronto, ON</p>
-  </div>
 
-  <!-- Item -->
-  <div class="flex flex-col items-center text-center p-8 rounded-xl bg-background shadow-md border border-accent/20">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-accent/10 text-accent shadow-sm mb-4">
-      <i data-lucide="share-2" class="w-7 h-7"></i>
-    </span>
-    <h3 class="font-heading font-semibold text-lg text-heading mb-1">Follow Us</h3>
-    <div class="flex gap-3 mt-3">
-      <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank"
-         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-background transition">
-        <i data-lucide="instagram"></i>
-      </a>
-      <a href="https://www.youtube.com/@BLOOMSisConnect" target="_blank"
-         class="w-9 h-9 flex items-center justify-center rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-background transition">
-        <i data-lucide="youtube"></i>
-      </a>
-    </div>
-  </div>
-</div>
+
+
 
 <!-- Contact Section -->
-<section class="py-32 bg-gradient-to-br from-accent/5 via-background to-background relative">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<section class="py-32 bg-background relative overflow-hidden">
+  <!-- Background texture -->
+  <div class="absolute inset-0">
+    <img src="assets/images/full-bloom.webp" alt="" class="w-full h-full object-cover opacity-5">
+    <div class="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-white/95"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
     
     <!-- Form -->
-    <div class="bg-background rounded-xl shadow-lg p-10 border border-accent/20">
+    <div class="bg-white rounded-xl shadow-lg p-10 border border-accent/20 relative z-10 fade-up">
       <h2 class="text-3xl font-heading font-bold text-heading mb-6">Send Us a Message</h2>
       <form class="grid gap-5">
         <div>
@@ -202,24 +255,77 @@
                     class="w-full p-4 rounded-lg border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20"></textarea>
         </div>
         <button type="submit"
-                class="w-full bg-accent text-background font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-accent-hover transition">
+                class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg shadow-md hover:bg-accent-hover hover:scale-[1.02] transition-transform">
           Send Message
         </button>
       </form>
     </div>
 
-    <!-- Image -->
-    <div class="relative">
-      <img src="assets/images/image (3).webp" 
-           alt="Women connecting at Bloom Sis event" 
-           class="rounded-xl shadow-lg object-cover w-full h-[600px]">
+    <!-- Premium Image -->
+    <div class="relative group fade-up" style="animation-delay:200ms;">
+      <!-- Decorative Accent Border -->
+      <div class="absolute -top-6 -left-6 w-full h-full border-4 border-accent/30 rounded-xl group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform duration-500"></div>
+      
+      <!-- Image -->
+      <div class="relative overflow-hidden rounded-xl shadow-2xl">
+        <img src="assets/images/image (3).webp" 
+             alt="Women connecting at Bloom Sis event" 
+             class="w-full h-[600px] object-cover transform group-hover:scale-105 transition duration-700">
+        <!-- Soft Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-accent/20 via-transparent to-transparent"></div>
+      </div>
+
+      <!-- Floating Accent Badge -->
+      <div class="absolute bottom-6 left-6 bg-accent text-white px-4 py-2 rounded-full shadow-lg text-sm font-semibold fade-up" style="animation-delay:400ms;">
+        Bloom in Community ✨
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Fade-up animation -->
+<style>
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+}
+.fade-up.visible {
+  animation: fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => observer.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+});
+</script>
+
+
+<!-- Divider -->
+<div class="w-full h-px bg-accent/20 my-16"></div>
+
 <!-- Support Section -->
-<section class="py-28 text-center bg-background">
-  <div class="max-w-5xl mx-auto px-6">
+<section class="py-28 text-center bg-background relative overflow-hidden">
+  <!-- Accent background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-background"></div>
+
+  <div class="relative max-w-5xl mx-auto px-6">
     <h2 class="text-4xl md:text-5xl font-heading font-extrabold text-heading mb-6">
       Support <span class="text-accent">Bloom Sis</span>
     </h2>
@@ -232,7 +338,7 @@
     </p>
     <div class="flex flex-wrap justify-center gap-6">
       <a href="sow.html" 
-         class="px-10 py-4 rounded-lg bg-accent text-background font-semibold shadow-md hover:bg-accent-hover transition">
+         class="px-10 py-4 rounded-lg bg-accent text-background font-semibold shadow-md hover:bg-accent-hover hover:scale-[1.03] transition-transform">
         Sow a Seed
       </a>
       <a href="about.html" 
