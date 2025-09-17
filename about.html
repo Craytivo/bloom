@@ -212,24 +212,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- Mission & Core Values Section -->
 <section class="relative py-28 bg-background overflow-hidden">
-  <!-- Background Accents -->
-  <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent/10 to-transparent rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-heading/10 to-transparent rounded-full blur-3xl"></div>
+  <!-- Background Texture -->
+  <div class="absolute inset-0">
+    <img src="assets/images/full-bloom.webp" alt="" class="w-full h-full object-cover opacity-5">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95"></div>
+  </div>
 
-  <div class="relative max-w-7xl mx-auto px-6 space-y-20">
+  <div class="relative max-w-7xl mx-auto px-6 space-y-24">
 
     <!-- Mission Card -->
-  <div class="text-center fade-up">
-  <div class="bg-gradient-to-br from-accent/5 to-luxury/30 rounded-3xl p-12 border border-accent/20 shadow-lg fade-up">
-        <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-8">
+    <div class="text-center fade-up">
+      <div class="bg-white rounded-3xl p-12 border border-accent/20 shadow-xl relative overflow-hidden">
+        <!-- Accent Shape -->
+        <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+        
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-8 relative">
           Our <span class="text-accent">Mission</span>
         </h2>
-        <p class="text-lg md:text-xl text-brand/80 leading-relaxed mb-6 font-body max-w-3xl mx-auto">
+        <p class="text-lg md:text-xl text-brand-80 leading-relaxed mb-6 font-body max-w-3xl mx-auto relative">
           Bloom Sis empowers women to flourish in all areas of life—spiritual, emotional, and physical. 
           We create spaces for healing, meaningful connections, and self-discovery through faith-based 
           practices and supportive community.
         </p>
-        <p class="text-xl md:text-2xl font-medium text-primary font-body max-w-2xl mx-auto">
+        <p class="text-xl md:text-2xl font-semibold text-primary font-body max-w-2xl mx-auto relative">
           Our mission is to help women embrace their purpose, nurture their well-being, 
           and bloom in every season of life.
         </p>
@@ -237,36 +242,43 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 
     <!-- Core Values -->
-  <div class="grid md:grid-cols-3 gap-10 fade-up">
+    <div class="grid md:grid-cols-3 gap-10 fade-up">
+      
       <!-- Card -->
-  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
+      <div class="bg-white p-10 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center group">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-accent/10 text-accent mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <i data-lucide="users" class="w-7 h-7"></i>
+        </div>
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Community & Connection
         </h3>
-        <p class="text-brand/80 text-base font-body leading-relaxed">
+        <p class="text-brand-80 text-base font-body leading-relaxed">
           Building supportive relationships that uplift and inspire growth.
         </p>
       </div>
 
       <!-- Card -->
-  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
+      <div class="bg-white p-10 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center group">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-accent/10 text-accent mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <i data-lucide="heart" class="w-7 h-7"></i>
+        </div>
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Spiritual Care
         </h3>
-        <p class="text-brand/80 text-base font-body leading-relaxed">
+        <p class="text-brand-80 text-base font-body leading-relaxed">
           Encouraging faith and practices that nurture the soul and guide purpose.
         </p>
       </div>
 
       <!-- Card -->
-  <div class="bg-white p-10 rounded-2xl shadow-lg border border-luxury/40 
-      hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 fade-up">
+      <div class="bg-white p-10 rounded-2xl shadow-md border border-accent/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 text-center group">
+        <div class="w-14 h-14 flex items-center justify-center rounded-full bg-accent/10 text-accent mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <i data-lucide="sparkles" class="w-7 h-7"></i>
+        </div>
         <h3 class="text-2xl font-heading font-semibold text-heading mb-3">
           Self-Love & Empowerment
         </h3>
-        <p class="text-brand/80 text-base font-body leading-relaxed">
+        <p class="text-brand-80 text-base font-body leading-relaxed">
           Encouraging women to embrace themselves fully and step into confidence.
         </p>
       </div>
@@ -274,109 +286,145 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- Custom Animations -->
+<!-- Animations -->
 <style>
 @keyframes fade-up {
   0% { opacity: 0; transform: translateY(40px) scale(0.97); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-.animate-fade-up {
-  animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
+.fade-up { opacity: 0; transform: translateY(40px) scale(0.97); }
+.fade-up.visible { animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 </style>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Animate fade-up on scroll
+  const els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => observer.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+
+  // Render Lucide icons
+  if (window.lucide && typeof lucide.createIcons === 'function') {
+    lucide.createIcons();
+  }
+});
+</script>
+
+
 
 
 <!-- Our Story & Founder Section -->
-<section class="relative py-28 bg-accent/10 overflow-hidden">
-  <!-- Background Accents -->
-  <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-accent/20 to-transparent rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-heading/20 to-transparent rounded-full blur-3xl"></div>
+<section class="relative py-28 bg-background overflow-hidden">
+  <!-- Background Texture -->
+  <div class="absolute inset-0">
+    <img src="assets/images/full-bloom.webp" alt="" class="w-full h-full object-cover opacity-5">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95"></div>
+  </div>
 
-  <div class="relative max-w-7xl mx-auto px-6 space-y-24">
+  <div class="relative max-w-7xl mx-auto px-6 space-y-28">
 
-    <!-- Row 1: Our Story with Image -->
+    <!-- Row 1: Our Story -->
     <div class="grid lg:grid-cols-2 gap-16 items-center">
       <!-- Story Text -->
-  <div class="space-y-6 fade-up">
-        <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-4">
+      <div class="space-y-6 fade-up">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading">
           Our <span class="text-accent">Story</span>
         </h2>
-        <div class="w-20 h-1 bg-gradient-to-r from-accent to-accent/50 rounded-full mb-6"></div>
-        <div class="space-y-5 text-brand/80 leading-relaxed font-body text-lg md:text-xl">
+        <div class="w-24 h-1 bg-accent rounded-full mb-8"></div>
+        <div class="space-y-5 text-brand-80 leading-relaxed font-body text-lg md:text-xl">
           <p>
-            Our story is one of transformation—spirit, soul, and body. We believe every woman deserves a space to flourish, find wholeness, and walk in her God-given identity. Through gatherings, mentorship, and authentic relationships, Bloom Sis offers a place to grow, heal, and belong.
+            Our story is one of <strong>transformation—spirit, soul, and body</strong>. We believe every woman deserves a space to flourish, find wholeness, and walk in her God-given identity. Through gatherings, mentorship, and authentic relationships, Bloom Sis offers a place to grow, heal, and belong.
           </p>
-          <ul class="list-disc pl-6 text-base md:text-lg text-primary font-semibold mb-4">
+          <ul class="list-disc pl-6 text-base md:text-lg text-primary font-semibold space-y-2">
             <li>Past BLOOM Gatherings & Worship Moments</li>
             <li>Selah Series: real stories, real healing</li>
             <li>Panels, teachings & tools for your growth</li>
             <li>A community to walk with you as you heal</li>
           </ul>
           <p>
-            Our pillars—Emotional Wholeness, Spiritual Care, Body Care, Generational Healing, Community, and Self-Love—shape everything we do. We’re committed to creating safe spaces for real conversations, worship, learning, and legacy-building.
+            Our pillars—<em>Emotional Wholeness, Spiritual Care, Body Care, Generational Healing, Community, and Self-Love</em>—shape everything we do. We’re committed to creating safe spaces for worship, legacy-building, and real conversations.
           </p>
           <p>
-            Whether you’re seeking encouragement, resources, or a sisterhood to walk with you, Bloom Sis welcomes you. Here, you’ll find stories of hope, tools for growth, and a community that celebrates every step of your journey.
+            Whether you’re seeking encouragement, resources, or a sisterhood to walk with you, Bloom Sis welcomes you. Here, you’ll find <strong>stories of hope, tools for growth, and a community that celebrates every step of your journey.</strong>
           </p>
-          <span class="font-heading text-accent font-bold">You belong here. Welcome to Bloom Sis.</span>
+          <span class="font-heading text-accent font-bold block pt-4">You belong here. Welcome to Bloom Sis.</span>
         </div>
       </div>
 
       <!-- Story Image -->
-  <div class="relative w-full max-w-sm mx-auto rounded-3xl overflow-hidden shadow-xl 
-      hover:shadow-2xl hover:scale-105 transition-all duration-700 ease-out fade-up">
-     <img src="assets/images/BLOOM_CAM2268.JPG" 
-       alt="Bloom Sis Gathering event photo" 
-       class="w-full h-auto object-cover aspect-[4/5]" loading="lazy" width="400" height="500">
-        <div class="absolute inset-0 bg-gradient-to-t from-heading/20 to-transparent"></div>
+      <div class="relative group fade-up" style="animation-delay:200ms;">
+        <!-- Decorative Border -->
+        <div class="absolute -top-6 -left-6 w-full h-full border-4 border-accent/20 rounded-3xl group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform duration-500"></div>
+        <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+          <img src="assets/images/BLOOM_CAM2268.JPG" 
+               alt="Bloom Sis Gathering event photo" 
+               class="w-full h-[550px] object-cover transform group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-accent/20 via-transparent to-transparent"></div>
+        </div>
       </div>
     </div>
 
     <!-- Row 2: Meet Our Founder -->
-  <div class="bg-background rounded-3xl p-12 shadow-lg border border-luxury/30 text-center fade-up">
-      <h3 class="text-3xl md:text-4xl font-heading font-bold text-heading mb-6">
+    <div class="bg-white rounded-3xl p-12 shadow-lg border border-accent/20 fade-up">
+    <!-- netlify-rebuild-trigger: 2025-09-17T00:00:00Z - harmless comment to force Netlify redeploy -->
+      <h3 class="text-3xl md:text-4xl font-heading font-bold text-heading text-center mb-8">
         Meet Our <span class="text-accent">Founder</span>
       </h3>
 
-      <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-8">
-        <!-- Founder Image -->
-     <img src="assets/images/rs=w_365,h_365,cg_true,m.webp" 
-       alt="Jessica Robinson-Grant, Bloom Sis Founder" 
-       class="w-28 h-28 rounded-full object-cover border-4 border-accent shadow-md" loading="lazy" width="112" height="112">
+      <div class="flex flex-col sm:flex-row items-center sm:items-center justify-center gap-10">
+        <!-- Founder Image + Social Media -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="relative">
+            <div class="absolute -top-2 -left-2 w-full h-full border-2 border-accent/30 rounded-full"></div>
+            <img src="assets/images/cropped_circle_image (1).webp" 
+                 alt="Jessica Robinson-Grant, Bloom Sis Founder" 
+                 class="w-32 h-32 rounded-full object-cover border-4 border-accent shadow-lg">
+          </div>
+          <!-- Social Media -->
+          <!-- Social Media -->
+<div class="flex gap-5 pt-2">
+  <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" 
+     class="text-accent hover:text-accent-hover transition">
+    <i data-lucide="instagram" class="w-7 h-7"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/jessicarobinsongrant" target="_blank" 
+     class="text-accent hover:text-accent-hover transition">
+    <i data-lucide="linkedin" class="w-7 h-7"></i>
+  </a>
+</div>
+
+        </div>
 
         <!-- Founder Text + CTAs -->
-  <div class="space-y-5 text-brand/80 leading-relaxed font-body max-w-xl text-left sm:text-left fade-up">
+        <div class="space-y-5 text-brand-80 leading-relaxed font-body max-w-xl">
           <p>
-            Jessica Robinson-Grant founded <strong>Bloom Sis</strong> to create a safe, empowering space where women could flourish spiritually, emotionally, and physically. Her passion for mentorship and holistic growth has inspired thousands to connect, heal, and thrive.
+            <strong>Jessica Robinson-Grant</strong> founded Bloom Sis to create a safe, empowering space where women could flourish spiritually, emotionally, and physically. Her passion for mentorship and holistic growth has inspired thousands to connect, heal, and thrive.
           </p>
           <p>
-            With over a decade of experience in women’s empowerment initiatives, Jessica continues to lead Bloom Sis with integrity, heart, and dedication, ensuring every woman feels valued and supported.
+            With over a decade of experience in women’s empowerment initiatives, Jessica continues to lead Bloom Sis with integrity, heart, and dedication—ensuring every woman feels valued and supported.
           </p>
 
-          <!-- Call-to-Action Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href="about.html#founder" 
-               class="inline-block bg-accent text-brand font-semibold py-3 px-6 rounded-xl shadow-md 
-                      hover:bg-accent-hover hover:scale-105 transition-all duration-300">
-              Learn More About Jessica
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="about.html" 
+               class="px-6 py-3 rounded-lg bg-accent text-heading font-semibold shadow-md hover:bg-accent-hover hover:text-heading hover:scale-[1.03] transition">
+              Explore Our Mission
             </a>
-            <a href="contact.html" 
-               class="inline-block bg-brand text-white font-semibold py-3 px-6 rounded-xl shadow-md 
-                      hover:bg-heading hover:scale-105 transition-all duration-300">
-              Contact Jessica
-            </a>
-          </div>
-
-          <!-- Social Media Links -->
-          <div class="flex justify-start gap-4 mt-6">
-            
-            <a href="https://www.instagram.com/bloomsisconnect/?hl=en" target="_blank" 
-               class="text-accent hover:text-accent-hover transition text-2xl">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jessicarobinsongrant" target="_blank" 
-               class="text-accent hover:text-accent-hover transition text-2xl">
-              <i class="fab fa-linkedin"></i>
+            <a href="sow.html" 
+               class="px-6 py-3 rounded-lg border border-accent/40 text-heading font-semibold shadow-sm hover:bg-accent/10 transition">
+              Partner With Us
             </a>
           </div>
         </div>
@@ -386,16 +434,35 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- Custom Animations -->
+
+<!-- Animations -->
 <style>
 @keyframes fade-up {
   0% { opacity: 0; transform: translateY(40px) scale(0.97); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-.animate-fade-up {
-  animation: fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
+.fade-up { opacity: 0; transform: translateY(40px) scale(0.97); }
+.fade-up.visible { animation: fade-up 1.2s cubic-bezier(0.16,1,0.3,1) forwards; }
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => observer.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+});
+</script>
+
 
 
 
@@ -405,32 +472,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 <!-- Call to Action / Newsletter -->
-<section class="relative py-28 bg-background overflow-hidden">
-  <!-- Background Accents -->
-  <div class="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-accent/20 to-transparent rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tr from-heading/10 to-transparent rounded-full blur-3xl"></div>
+<section class="relative py-32 bg-background overflow-hidden">
+  <!-- Background Texture -->
+  <div class="absolute inset-0">
+    <img src="assets/images/full-bloom.webp" alt="" class="w-full h-full object-cover opacity-10">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95"></div>
+  </div>
 
   <div class="relative max-w-4xl mx-auto text-center px-6">
+    <!-- Floating Badge -->
+    <div class="inline-flex items-center gap-2 bg-accent/10 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-6 fade-up" style="animation-delay:0ms;">
+      <div class="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+      <span class="text-sm font-semibold text-accent">✨ Join the Bloom Movement</span>
+    </div>
+
     <!-- Heading -->
-    <h2 class="text-4xl md:text-5xl font-heading font-bold text-heading mb-6 
-               opacity-0 animate-fade-up [animation-delay:200ms]">
+    <h2 class="text-4xl md:text-5xl font-heading font-extrabold text-heading mb-4 fade-up" style="animation-delay:200ms;">
       Stay <span class="text-accent">Connected</span>
     </h2>
-    <p class="text-lg md:text-xl text-brand/80 mb-10 leading-relaxed font-body 
-              opacity-0 animate-fade-up [animation-delay:400ms]">
-      Subscribe to our newsletter and be the first to know about upcoming 
-      gatherings, retreats, and Bloom Sis initiatives.
+    <div class="w-20 h-1 bg-accent mx-auto rounded-full mb-8 fade-up" style="animation-delay:300ms;"></div>
+
+    <!-- Subtext -->
+    <p class="text-lg md:text-xl text-brand-80 leading-relaxed font-body max-w-2xl mx-auto mb-10 fade-up" style="animation-delay:400ms;">
+      Subscribe to our newsletter and be the first to know about upcoming gatherings, retreats, and Bloom Sis initiatives. 
+      Together, let’s walk in faith, healing, and growth. 🌸
     </p>
 
-    <!-- Unified Pill Form -->
-    <form class="flex flex-col sm:flex-row justify-center items-center max-w-2xl mx-auto 
-                 opacity-0 animate-fade-up [animation-delay:600ms]">
-      <div class="flex w-full sm:w-auto bg-white border border-primary/20 rounded-full overflow-hidden shadow-sm">
+    <!-- Form -->
+    <form class="flex flex-col sm:flex-row justify-center items-center max-w-2xl mx-auto fade-up" style="animation-delay:600ms;">
+      <div class="flex w-full sm:w-auto bg-white border border-accent/20 rounded-full overflow-hidden shadow-md focus-within:shadow-lg transition">
         <input type="email" placeholder="Enter your email" 
-               class="flex-grow px-6 py-4 text-brand font-body focus:outline-none 
-                      focus:ring-2 focus:ring-accent rounded-l-full">
+               class="flex-grow px-6 py-4 text-brand font-body focus:outline-none focus:ring-2 focus:ring-accent/30 rounded-l-full">
         <button type="submit" 
-                class="px-8 py-4 bg-accent text-background font-semibold rounded-r-full 
+                class="px-8 py-4 bg-accent text-heading font-semibold rounded-r-full 
                        hover:bg-accent-hover hover:scale-105 transition-all duration-300">
           Subscribe
         </button>
@@ -439,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </section>
 
-<!-- Custom Animations -->
+<!-- Animations -->
 <style>
 @keyframes fade-up {
   0% { opacity: 0; transform: translateY(40px) scale(0.97); }
@@ -448,33 +522,31 @@ document.addEventListener('DOMContentLoaded', () => {
 .fade-up {
   opacity: 0;
   transform: translateY(40px) scale(0.97);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .fade-up.visible {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+  animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 </style>
 <script>
-  // Tasteful scroll-triggered fade-up animation
-  document.addEventListener('DOMContentLoaded', function() {
-    const animatedEls = document.querySelectorAll('.fade-up');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      animatedEls.forEach(el => observer.observe(el));
-    } else {
-      // Fallback: show all if no IntersectionObserver
-      animatedEls.forEach(el => el.classList.add('visible'));
-    }
-  });
+document.addEventListener('DOMContentLoaded', function() {
+  const els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(el => observer.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+});
 </script>
+
+
 
 
 
